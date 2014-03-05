@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: work | The Land of Shattered Dreams]]></title>
+  <link href="http://typingincolor.github.io/tags/work/atom.xml" rel="self"/>
+  <link href="http://typingincolor.github.io/"/>
+  <updated>2014-03-05T10:24:14+00:00</updated>
+  <id>http://typingincolor.github.io/</id>
+  <author>
+    <name><![CDATA[Andrew Braithwaite]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Hut Group's first Code Dojo ]]></title>
+    <link href="http://typingincolor.github.io/blog/2012/05/16/the-hut-groups-first-code-dojo/"/>
+    <updated>2012-05-16T21:03:02+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2012/05/16/the-hut-groups-first-code-dojo</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/logos/dojo.jpg"></p>
+
+<p>A couple of years ago, one of our technical architects at the Hut Group ran a few code dojos to give the team experience of TDD and Pair Programming. The team has grown massively in the meantime, so I thought it would be a good opportunity to try it again.</p>
+
+<p>To quote from <a href="http://codingdojo.org/">codingdojo.org</a>, a dojo is:</p>
+
+<blockquote>
+  <p>…a meeting where a bunch of coders get together to work on a programming challenge. They are there to have fun and to engage in <a href="http://codingdojo.org/cgi-bin/wiki.pl?DeliberatePractice">DeliberatePractice</a> in order to improve their skills.</p>
+</blockquote>
+
+<p>So, I booked the boardroom, setup an Intellij project on my MacBook and waited for the developers to arrive. In the end about 10 people came, with a range of development experience from less than a year, to more than we’d care to admit to.</p>
+
+<p>The exercise I chose for the group was to implement the “fizz buzz” game. Basically for a given natural number greater zero return</p>
+
+<ul>
+  <li>
+    <p>“fizz” if the number is divisible by 3</p>
+  </li>
+  <li>
+    <p>“buzz” if the number is divisible by 5</p>
+  </li>
+  <li>
+    <p>“fizzbuzz” if the number is divisible by both 3 and 5</p>
+  </li>
+  <li>
+    <p>otherwise return the number</p>
+  </li>
+</ul>
+
+<p>The first comedy moment was when we went round the table and tried to play “fizz buzz”. You’d have thought a group of highly skilled IT professionals would be able to do simple mental arithmetic, but this is apparently not the case…</p>
+
+<p>The problem itself isn’t all that complicated, a decent developer could write the code in 5 minutes, but the point of the exercise isn’t really the end solution. More important is how you get to it. A pair of developers worked at the laptop. The driver types, focuses on tactics and writing clean code that compiles and runs. The navigator focuses on strategy. How the code fits into the overall design, which tests will drive the code forward, and which refactorings will improve the entire codebase.</p>
+
+<p>We also wanted to build the solution using Test Driven Development. You write a test that fails, write some code to make it pass and then refactor. With a problem this simple it is quite difficult to force yourself to follow these steps.</p>
+
+<p>We started with the simplest case we could think of, i.e. if you pass in 1, you get 1 back and built from there. We managed 7 iterations in the time we had available and got to a reasonable solution.</p>
+
+<p>Going through the exercise prompted a lot of interesting debate. We talked about how you identify test cases, different ways of implementing the algorithm and even got into some OO design. I think the group found the exercise useful, I guess the proof will be when I see how many people come to the second code dojo.</p>
+
+<p>There was one thing that I didn’t think worked too well. The navigator didn’t really get to contribute as the entire group chipped in ideas so effectively we had 10 navigators, but I’m not sure if this wasn’t a good thing.</p>
+
+<p>Next time I may try using <a href="http://www.cyber-dojo.com/">cyber-dojo</a> which would allow pairs to work at the same time. It is a pretty neat site where you select a exercise and can code it online in a huge number of languages. One thing it does prove is that Java is a bit of a nightmare without an IDE, Ruby is the future!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Software Engineering Explained]]></title>
+    <link href="http://typingincolor.github.io/blog/2011/09/14/software-engineering-explained/"/>
+    <updated>2011-09-14T22:20:57+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2011/09/14/software-engineering-explained</id>
+    <content type="html"><![CDATA[<p><a href="/images/funny/software-engineering-explained.png"><img src="/images/funny/software-engineering-explained.png" alt="" /></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My First Rails App...]]></title>
+    <link href="http://typingincolor.github.io/blog/2011/03/17/my-first-rails-app/"/>
+    <updated>2011-03-17T00:13:53+00:00</updated>
+    <id>http://typingincolor.github.io/blog/2011/03/17/my-first-rails-app</id>
+    <content type="html"><![CDATA[<p><a href="http://rubyonrails.org"><img class="left" src="/images/logos/rails.png"></a> 
+I have worked in IT for the best part of 15 years, most of that in technical roles. I started as a Trainee Programmer in the IT department of a large bank, and have ended up as the Head of Development at at one of the UK’s fastest growing technology companies. When I started work I developed in C and a 4GL called  OpenROAD, and I was pretty good at them…</p>
+
+<p>I started using Java in around 1999, back when applets were still used. I quite liked it, and I’ve used it pretty much ever since. I last worked on a C project in 2000, I could probably remember how to compile a program if I had to, but I suspect I would just cause servers to core dump if I was allowed any where near them now.</p>
+
+<p>I’ve not really written any  serious code at work for probably 18 months and to be honest, doing anything in Java doesn’t really appeal as I’ve been there and done that.</p>
+
+<p>One of the things I want to do is get a picture of how much my team actually know and then track any improvement over time. One of my colleagues produced a skills matrix for his team where there is a list of skills, and everybody gives themselves a score from 0 to 4 based on how they perceive their skill level. It is a really useful tool when you collate all the data, and I thought I’d have some of that.</p>
+
+<p>Now, my colleague did his skills matrix using Excel; but as a one-time code monkey I thought it would be a good excuse to dust off the old development skills and build a web application to do it.</p>
+
+<p>I looked at a few options to build the app. Groovy on Grails and the Play framework are basically java, and I really can’t be bothered with that; so in the end I went for Ruby on Rails.</p>
+
+<p><a href="http://www.ruby-lang.org/en/"><img class="left" src="/images/logos/ruby.gif"></a>
+I quite like Ruby as  a language. It is weakly typed which makes things a lot easier and the syntax pretty easy to follow. Rails as development framework is ridiculously easy. I have written less than 100 lines code to build the app. The hardest part was the css so that it didn’t look like a dogs dinner. I’m not sure I am entirely in favour of how easy it is, there is a bit to much magic for my liking; things work when I think they shouldn’t and then I spend 10 minutes working out why it works. All-in-all though it has been a pretty enjoyable experience.</p>
+
+<p>There are a few things a really do like though:</p>
+
+<ul>
+  <li>
+    <p><a href="http://haml.info">haml</a> - I didn’t really see the point at first. It is a templating framework to generate html. You still need to really understand html (this is why I didn’t see the point), but it does make you write properly formatted code. It also stops you doing some of the more horrible things you can do in jsps or erb.</p>
+  </li>
+  <li>
+    <p><a href="http://www.sourcetreeapp.com/">sourcetree</a> - it’s a client for git (and mercurial) for OS X and it makes it soooo much easier. Git is a brilliant source control tool, and sourcetree makes it really easy. I know the guy who developed it and he’s done a great job on it.</p>
+  </li>
+  <li>
+    <p><a href="http://www.heroku.com/">heroku</a> - makes it stupidly easy to deploy your rails app to a production environment. You just push you git repo up to it and it just works. If only java was so easy.</p>
+  </li>
+</ul>
+
+<p>Maybe it is time for me to stop going to meetings, planning projects and get with the program and do some proper development. Skillz version 1 (great name eh?) will be unleashed on the development team next week, and I’m already planning the features for version 2.</p>
+
+<p>The one fly in the ointment is that Rails development on Windoze truly sucks. Git doesn’t work properly, the tools suck, windoze sucks and the whole experience is just rubbish. If you’re going to do Rails buy a mac.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Art of Agile Development - Shore & Warden]]></title>
+    <link href="http://typingincolor.github.io/blog/2010/06/08/the-art-of-agile-development-shore-warden/"/>
+    <updated>2010-06-08T10:08:13+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2010/06/08/the-art-of-agile-development-shore-warden</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/the-art-of-agile-development-shore-warden/art-of-agile-development.jpg">
+We’re slowly introducing Agile Development at work to help us deliver the systems the business needs to continue our impressive growth.</p>
+
+<p>We’re probably going to end up with a mixture of Scrum and XP, and although we’ve only just started we’re beginning to see the benefit in that we have a long term plan agreed with the business which we are now delivering to.</p>
+
+<p>The Art of Agile Development is an excellent book explaing how Agile Development, and specifically XP can help you. It explains all the XP practices, how to implement them and how they all fit together. The process outlined in the book won’t work for everyone, but I think everybody can learn something from it. Some of the things mentioned are just common sense and best practice anyway, but some of it is quite counter-intuative.</p>
+
+<p>I found the book really interesting and we’re slowly introducing some of the practices. I recommend it to anybody who is interested in Agile Development.</p>
+
+<p><a href="http://www.amazon.co.uk/Art-Agile-Development-James-Shore/dp/0596527675">Buy now from amazon.co.uk</a></p>
+
+]]></content>
+  </entry>
+  
+</feed>

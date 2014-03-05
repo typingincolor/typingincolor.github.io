@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: tools | The Land of Shattered Dreams]]></title>
+  <link href="http://typingincolor.github.io/tags/tools/atom.xml" rel="self"/>
+  <link href="http://typingincolor.github.io/"/>
+  <updated>2014-03-05T10:24:14+00:00</updated>
+  <id>http://typingincolor.github.io/</id>
+  <author>
+    <name><![CDATA[Andrew Braithwaite]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My First Rails App...]]></title>
+    <link href="http://typingincolor.github.io/blog/2011/03/17/my-first-rails-app/"/>
+    <updated>2011-03-17T00:13:53+00:00</updated>
+    <id>http://typingincolor.github.io/blog/2011/03/17/my-first-rails-app</id>
+    <content type="html"><![CDATA[<p><a href="http://rubyonrails.org"><img class="left" src="/images/logos/rails.png"></a> 
+I have worked in IT for the best part of 15 years, most of that in technical roles. I started as a Trainee Programmer in the IT department of a large bank, and have ended up as the Head of Development at at one of the UK’s fastest growing technology companies. When I started work I developed in C and a 4GL called  OpenROAD, and I was pretty good at them…</p>
+
+<p>I started using Java in around 1999, back when applets were still used. I quite liked it, and I’ve used it pretty much ever since. I last worked on a C project in 2000, I could probably remember how to compile a program if I had to, but I suspect I would just cause servers to core dump if I was allowed any where near them now.</p>
+
+<p>I’ve not really written any  serious code at work for probably 18 months and to be honest, doing anything in Java doesn’t really appeal as I’ve been there and done that.</p>
+
+<p>One of the things I want to do is get a picture of how much my team actually know and then track any improvement over time. One of my colleagues produced a skills matrix for his team where there is a list of skills, and everybody gives themselves a score from 0 to 4 based on how they perceive their skill level. It is a really useful tool when you collate all the data, and I thought I’d have some of that.</p>
+
+<p>Now, my colleague did his skills matrix using Excel; but as a one-time code monkey I thought it would be a good excuse to dust off the old development skills and build a web application to do it.</p>
+
+<p>I looked at a few options to build the app. Groovy on Grails and the Play framework are basically java, and I really can’t be bothered with that; so in the end I went for Ruby on Rails.</p>
+
+<p><a href="http://www.ruby-lang.org/en/"><img class="left" src="/images/logos/ruby.gif"></a>
+I quite like Ruby as  a language. It is weakly typed which makes things a lot easier and the syntax pretty easy to follow. Rails as development framework is ridiculously easy. I have written less than 100 lines code to build the app. The hardest part was the css so that it didn’t look like a dogs dinner. I’m not sure I am entirely in favour of how easy it is, there is a bit to much magic for my liking; things work when I think they shouldn’t and then I spend 10 minutes working out why it works. All-in-all though it has been a pretty enjoyable experience.</p>
+
+<p>There are a few things a really do like though:</p>
+
+<ul>
+  <li>
+    <p><a href="http://haml.info">haml</a> - I didn’t really see the point at first. It is a templating framework to generate html. You still need to really understand html (this is why I didn’t see the point), but it does make you write properly formatted code. It also stops you doing some of the more horrible things you can do in jsps or erb.</p>
+  </li>
+  <li>
+    <p><a href="http://www.sourcetreeapp.com/">sourcetree</a> - it’s a client for git (and mercurial) for OS X and it makes it soooo much easier. Git is a brilliant source control tool, and sourcetree makes it really easy. I know the guy who developed it and he’s done a great job on it.</p>
+  </li>
+  <li>
+    <p><a href="http://www.heroku.com/">heroku</a> - makes it stupidly easy to deploy your rails app to a production environment. You just push you git repo up to it and it just works. If only java was so easy.</p>
+  </li>
+</ul>
+
+<p>Maybe it is time for me to stop going to meetings, planning projects and get with the program and do some proper development. Skillz version 1 (great name eh?) will be unleashed on the development team next week, and I’m already planning the features for version 2.</p>
+
+<p>The one fly in the ointment is that Rails development on Windoze truly sucks. Git doesn’t work properly, the tools suck, windoze sucks and the whole experience is just rubbish. If you’re going to do Rails buy a mac.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: css | The Land of Shattered Dreams]]></title>
+  <link href="http://typingincolor.github.io/tags/css/atom.xml" rel="self"/>
+  <link href="http://typingincolor.github.io/"/>
+  <updated>2014-03-05T10:24:14+00:00</updated>
+  <id>http://typingincolor.github.io/</id>
+  <author>
+    <name><![CDATA[Andrew Braithwaite]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[More Bootstrap]]></title>
+    <link href="http://typingincolor.github.io/blog/2012/05/15/more-bootstrap/"/>
+    <updated>2012-05-15T10:45:47+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2012/05/15/more-bootstrap</id>
+    <content type="html"><![CDATA[<p><a href="http://typingincolor-website.s.greenqloud.com/typingincolor.com/wp-content/uploads/2012/05/before1.png"><img class="left" src="/images/bootstrap/before.png" width="150" height="150" title="before before" ></a></p>
+
+<p><a href="http://typingincolor-website.s.greenqloud.com/typingincolor.com/wp-content/uploads/2012/05/after1.png"><img class="left" src="/images/bootstrap/after.png" width="150" height="150" title="after after" ></a>
+As discussed earlier I have been playing with bootstrap for a few weeks and I’m beginning to get into in now. Below is an example of a screen I re-developed to replace a horrible accordion control with tabs and pagination from bootstrap.</p>
+
+<p>I think it looks much better now and it was pretty simple to implement.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Playing with bootstrap]]></title>
+    <link href="http://typingincolor.github.io/blog/2012/03/09/playing-with-bootstrap/"/>
+    <updated>2012-03-09T00:09:38+00:00</updated>
+    <id>http://typingincolor.github.io/blog/2012/03/09/playing-with-bootstrap</id>
+    <content type="html"><![CDATA[<p>I’m not a big fan of developing user interfaces. Back in the day I used a tool called OpenROAD to write GUIs for database applications. It was a bit like VB, in that it was an event driven 4GL, but it stored everything in an Ingres database. You couldn’t do proper version control. There was no separation of business logic from presentation logic and you used on grids to position everything. I got quite good at it, but it put me off GUIs for ever.</p>
+
+<p>Moving forward to the present day. I work for one of the UK’s largest online retailers and not liking GUIs is a bit of a disadvantage. I can knock up a webpage pretty quickly and can even do css to a degree, but I’m far from great and not in the same league as our front-end dev team.</p>
+
+<p>I’ve been listening in on a few conversations and Bootstrap from Twitter came up. Bootstrap aims to provide Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions. I have to admit it seems to do it pretty darn well. I’ve been having a play with it this evening and have managed to knock up a couple of decent (in my opinion) looking screens pretty easily. I’ve got a functional nav-bar, some drop down menus and a reasonable looking form. All the javascript you need comes with it, the css is easy to apply to the html and there are some nice looking icons with it as well. All in all it’s been a pretty painless experience.</p>
+
+<p>It might be time to buy some flip-flops, get a couple of shirts from Threadless and see if I can join the design team… (although my complete lack of talent will probably count against me).</p>
+
+<p>If you interested, Bootstrap can be found <a href="http://twitter.github.com/bootstrap/index.html">here</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

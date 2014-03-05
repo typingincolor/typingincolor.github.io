@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: Andrew Braithwaite | The Land of Shattered Dreams]]></title>
+  <link href="http://typingincolor.github.io/tags/andrew-braithwaite/atom.xml" rel="self"/>
+  <link href="http://typingincolor.github.io/"/>
+  <updated>2014-03-05T10:24:14+00:00</updated>
+  <id>http://typingincolor.github.io/</id>
+  <author>
+    <name><![CDATA[Andrew Braithwaite]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[YAGNI]]></title>
+    <link href="http://typingincolor.github.io/blog/2011/03/25/yagni/"/>
+    <updated>2011-03-25T00:02:37+00:00</updated>
+    <id>http://typingincolor.github.io/blog/2011/03/25/yagni</id>
+    <content type="html"><![CDATA[<p>YAGNI or You Ain’t Going To Need It - the battle cry of the committed agilista. Software developers, myself included, have a rather annoying tendency to over engineer their solutions. We sit there thinking that with a little bit of extra effort we can build a framework or make the code easily extensible so that when the next problem comes along it will take us no time at all to build a solution.</p>
+
+<p>There just two problems:</p>
+
+<ul>
+  <li>It never takes a little bit of effort</li>
+  <li>The “extensible” code you build is never that extensible - it never fits tomorrow’s problem</li>
+</ul>
+
+<p>Hence YAGNI! You build enough to solve today’s problem, and worry about tomorrow’s problem tomorrow.</p>
+
+<p>Why am I blogging about YAGNI? As <a href="http://typingincolor.com/2011/03/andrew-braithwaite/my-first-rails-app/">previously mentioned</a> I have been writing a skills matrix application for work so I can track the level of skill in my team over time. I have high hopes of building an all singing, all dancing system in ruby on rails that will be all things to all men. Unfortunately, I want to know what we know today not in six months. So I built a version that did the bare minimum and released it. I started with collecting the data, I’ve now added a report and will start tracking changes next. I’ve not really worried about how I’m going to build the new functionality and I’m hoping it will all come out in the wash.</p>
+
+<p>Now I could be wrong about YAGNI, it may turn out that I did need it after all. But if worst comes to the worst, I’ve got the data, I’ve learnt a lot of ruby and the next version of skillz will be better. I’m pretty confident I can make it all work, and I’m really good a data migrations if it doesn’t. I can always use Excel if I have to…</p>
+]]></content>
+  </entry>
+  
+</feed>

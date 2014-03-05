@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: welcome | The Land of Shattered Dreams]]></title>
+  <link href="http://typingincolor.github.io/blog/categories/welcome/atom.xml" rel="self"/>
+  <link href="http://typingincolor.github.io/"/>
+  <updated>2014-03-05T10:24:14+00:00</updated>
+  <id>http://typingincolor.github.io/</id>
+  <author>
+    <name><![CDATA[Andrew Braithwaite]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome to the Land of Shattered Dreams]]></title>
+    <link href="http://typingincolor.github.io/blog/2013/04/28/welcome/"/>
+    <updated>2013-04-28T20:33:00+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2013/04/28/welcome</id>
+    <content type="html"><![CDATA[<p>I’ve been blogging at as <a href="http://typingincolor.com">typingincolor</a> for about three years. It started as
+an exercise to learn a bit about wordpress, and was a place where I reviewed 
+whatever DVDs and books I’d been looking at. </p>
+
+<p>As time progressed, I began to add some stuff about work and technology. 
+In particular I talked a bit about the journey the company I was working for
+was taking into the world of agile development. I also put in some stuff about
+technology that I was currently looking at.</p>
+
+<p>It worked (and works) pretty well, but I’ve decided to try something new. I’ve
+chosen to use <a href="http://octopress.org">octopress</a> as it will let me use some technologies I’m 
+interested in. I particularly like that the styling is done using <a href="http://sass-lang.com/">sass</a> and
+the content written in <a href="http://daringfireball.net/projects/markdown/">markdown</a>. That fact that it’s built on ruby is a 
+happy coincidence.</p>
+
+<p>The other thing I do really like is that it uses <a href="http://git-scm.com/">git</a> to publish the content. 
+I can run a local copy of any changes I make and preview them locally, I can then
+push the content up to <a href="https://www.heroku.com/">heroku</a> where they are visible to the world.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: outlook | The Land of Shattered Dreams]]></title>
+  <link href="http://typingincolor.github.io/tags/outlook/atom.xml" rel="self"/>
+  <link href="http://typingincolor.github.io/"/>
+  <updated>2014-03-05T10:24:14+00:00</updated>
+  <id>http://typingincolor.github.io/</id>
+  <author>
+    <name><![CDATA[Andrew Braithwaite]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Create Things tasks from within outlook]]></title>
+    <link href="http://typingincolor.github.io/blog/2011/12/15/create-things-tasks-from-within-outlook/"/>
+    <updated>2011-12-15T23:20:27+00:00</updated>
+    <id>http://typingincolor.github.io/blog/2011/12/15/create-things-tasks-from-within-outlook</id>
+    <content type="html"><![CDATA[<p>I use <a href="http://www.red-sweater.com/fastscripts/">FastScripts</a> to run this, and it creates a Things task for each message you’ve selected in Outlook.</p>
+
+<p>``` applescript  <br />
+    tell application “Microsoft Outlook”
+    	using terms from application “Microsoft Outlook”
+    		– get the currently selected message or messages
+    		set selectedMessages to current messages</p>
+
+<pre><code>		-- if there are no messages selected, warn the user and then quit
+		if selectedMessages is {} then
+			display dialog "Please select a message first and then run this script." with icon 1
+			return
+		end if
+		
+		repeat with theMessage in selectedMessages
+			set theSubject to subject of theMessage
+			set theContent to plain text content of theMessage
+			
+			tell application "Things"
+				set newToDo to make new to do with properties {name:theSubject}
+				set tag names of newToDo to "email"
+				set notes of newToDo to theContent
+			end tell
+		end repeat
+	end using terms from
+end tell ```
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

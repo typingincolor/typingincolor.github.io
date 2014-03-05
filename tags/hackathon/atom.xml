@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: hackathon | The Land of Shattered Dreams]]></title>
+  <link href="http://typingincolor.github.io/tags/hackathon/atom.xml" rel="self"/>
+  <link href="http://typingincolor.github.io/"/>
+  <updated>2014-03-05T10:24:14+00:00</updated>
+  <id>http://typingincolor.github.io/</id>
+  <author>
+    <name><![CDATA[Andrew Braithwaite]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Facebook London Hackathon 2012]]></title>
+    <link href="http://typingincolor.github.io/blog/2012/09/22/facebook-london-hackathon-2012/"/>
+    <updated>2012-09-22T10:05:34+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2012/09/22/facebook-london-hackathon-2012</id>
+    <content type="html"><![CDATA[<p>Yesterday I went to Facebook’s London office for my first “Hackathon”.</p>
+
+<p>We got started around 0930, and had a few hours of talks from the Facebook team as well as a number of their partners. The guys from Facebook talked to us about Open Graph, mobile development and Facebook games. The talks were a good introduction to Facebook’s various apis that we would be using for during the afternoon’s hacking. Three of Facebook’s partners then gave a very quick overview of their services.</p>
+
+<p>We saw presentations from:</p>
+
+<ul>
+  <li><a href="http://www.twilio.com/">Twilio</a>, who provide all sorts of telephony goodness</li>
+  <li><a href="http://www.deezer.com/en/">Deezer</a>, a web based music platform</li>
+  <li><a href="http://pusher.com">Pusher</a>, a way of doing real time magic</li>
+</ul>
+
+<p><img class="right" src="/images/events/hackathon.jpg" title="hackathon" >
+Once we’d finished we moved on the hacking. Everybody split into teams and had 7 hours to build something using the technologies discussed in the morning. Various prizes were on offer for the best hacks, they just had to use the Facebook platform.</p>
+
+<p>Ben and I were at a slight disadvantage in that there were only two of us in our team, and we wanted to build something that we could use a work. We had a few ideas over the previous couple of days and decided to build a store visit application. Basically, a customer goes to app’s Facebook page, chooses which store they visited and are asked to submit a review of the store. The review is posted to Open Graph and will appear on the customer’s Facebook timeline. When a customer visits the page of the store, they will see all the reviews for that store and be able to like, comment etc on them.</p>
+
+<p>We also wanted to use Twilio to contact the customer if their review was negative to try to address whatever problem the customer had.</p>
+
+<p>We’re kind of limited to our technology choice seeing as we do things in Java, so we built our app on Tomcat using Spring MVC. We got to the point of posting the customer’s review to Open Graph, but we didn’t really have anything in a fit state to present to the group.</p>
+
+<p>Most of our problems were around our choice of technology. Spring is a great framework, but it can be a bit of a pain to configure properly. I tried to get hibernate working with hsqldb but failed miserably and spent 90 minutes trying to persist our reviews. In the end I gave up, installed mongodb and got it working in about 20 minutes. I used the <a href="http://progrium.com/localtunnel/">localtunnel</a> gem  to allow Facebook access to my dev machine, but it kept on timing out which meant I had to continually reconfigure the app in Facebook. I used <a href="http://twitter.github.com/bootstrap/">bootstrap</a> for the colours and shapes, but it didn’t work properly in the Facebook canvas iframe.</p>
+
+<p>Going forward, I’m going to look at <a href="http://java.heroku.com/">Java Heroku</a> which will remove the need for localtunnel. I need to play with bootstrap to get that to work properly and I will get the persistence layer working before I start when I go to my next hackathon.</p>
+
+<p>All in all, it was a very useful day. I don’t get much chance to code anymore, let alone for 7 hours straight. The facilities provided by Facebook were excellent and all their engineers were very helpful.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Development | The Land of Shattered Dreams]]></title>
+  <link href="http://typingincolor.github.io/blog/categories/development/atom.xml" rel="self"/>
+  <link href="http://typingincolor.github.io/"/>
+  <updated>2014-03-05T10:24:14+00:00</updated>
+  <id>http://typingincolor.github.io/</id>
+  <author>
+    <name><![CDATA[Andrew Braithwaite]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Documenting APIs]]></title>
+    <link href="http://typingincolor.github.io/blog/2013/06/27/documenting-apis/"/>
+    <updated>2013-06-27T14:37:00+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2013/06/27/documenting-apis</id>
+    <content type="html"><![CDATA[<p>One of the projects I am working on at work is revamping our mobile applications.</p>
+
+<p>We are designing a RESTful web service layer that a mobile device will use to allow a customer to do various things.</p>
+
+<p>One of the problems I have is that a third party is going to build the service layer and they need to be told what services the API layer has to expose. The mobile devs also need to know what to expect from the service.</p>
+
+<p>I’ve tried to document everything using Word documents, but I couldn’t really get to a format that I liked. After talking to a few people I decided to try a couple of tools</p>
+
+<h2 id="apiary">Apiary</h2>
+<p><a href="http://apiary.io">Apiary</a> allows you to define an API using a simple, Markdown inspired DSL. </p>
+
+<pre><code>HOST: http://shop.acme.com/
+--- Sample API v2 ---
+---
+Welcome to our API. Comments support [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax.
+---
+-- Shopping Cart Resources --
+GET /shopping-cart
+&gt; Accept: application/json
+&lt; 200
+&lt; Content-Type: application/json
+{ "items": [
+    { "url": "/shopping-cart/1", "product":"2ZY48XPZ", "quantity": 1, "name": "New socks", "price": 1.25 }
+  ] }
+</code></pre>
+
+<p>It turns this markdown into some nice looking documentation to describe your API. It even lets you call the API from within Apiary and it can stub your API for you as well…</p>
+
+<p>I liked it, but I couldn’t put the level of detail in the documentation that I wanted. I’d also prefer to deploy the documentation with the API not on Apiary’s site.</p>
+
+<h2 id="swagger">Swagger</h2>
+<p><a href="https://developers.helloreverb.com/swagger/">Swagger</a> have taken a slightly different approach, or actually several approaches. You can document you api in a number of ways: you can write some json to describe it, you can write java/scala and annotate your code or you can do it in javascript. Either way you end up with a load of json that describes your API.</p>
+
+<p>Swagger-ui can be deployed with the API and renders the json in a nice looking format. You can also use it to call the API, but it doesn’t stub it for you.</p>
+
+<p>You can see a demo <a href="http://petstore.swagger.wordnik.com/">here</a>.</p>
+
+<p>In the end I used swagger, and annotated a Javascript stub that I was writing anyway. I can document everything I need to, and the developers get a nice UI to see what the API does.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Playing with Rest-Assured]]></title>
+    <link href="http://typingincolor.github.io/blog/2013/04/10/playing-with-rest-assured/"/>
+    <updated>2013-04-10T11:28:31+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2013/04/10/playing-with-rest-assured</id>
+    <content type="html"><![CDATA[<p>We are moving to a service oriented architecture at work based using technology from <a href="http://apigee.com">Apigee</a> which is helping us build securable and scalable APIs for our applications to use.</p>
+
+<p>Our APIs are based on <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">RESTful Web Services</a> with <a href="http://en.wikipedia.org/wiki/JSON">JSON</a> message bodies. This is means that they can be used by anything that can send a HTTP request, including a browser.</p>
+
+<p>One of the challenges is testing these APIs. Being a Java shop, sending the HTTP requests can be a bit of a faff, as can parsing the resultant JSON responses. We want the tests to be automated, and seeing as we use <a href="http://junit.org">Junit</a> and <a href="https://code.google.com/p/hamcrest/">Hamcrest</a> something that works in a similar way would be good. After a bit of googling, one of my colleagues pointed me in the direction of <a href="https://code.google.com/p/rest-assured">Rest-Assured</a>.</p>
+
+<p>Rest-Assured is a domain specific language for the easy testing of REST services, and attempts to bring the simplicity of using a dynamic language such a Ruby or Groovy to Java. It does this pretty well!</p>
+
+<p>What I particularly like is that you can set up a fairly complex scenario with a minimum of code and it is really easy to see what is being tested. The documentation on the website is really good, but as an example:</p>
+
+<p>Assume that a GET request to http://localhost:8080/ returns JSON as:</p>
+
+<p><code>json
+{
+    "lotto":{
+         "lottoId":5,
+         "winning-numbers":[2,45,34,23,7,5,3],
+         "winners":[{
+               "winnerId":23,
+               "numbers":[2,45,34,23,3,5]
+         },{
+               "winnerId":54,
+               "numbers":[52,3,12,11,18,22]
+         }]
+    }
+} 
+</code></p>
+
+<p>Then:</p>
+
+<p><code>ruby
+expect().body("lotto.lottoId", equalTo(5)).when().get("/lotto");
+</code></p>
+
+<p>Verifies that the lottoId is 5 when you get it. It’s easy to read, simple to setup, and really powerful…</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Facebook London Hackathon 2012]]></title>
+    <link href="http://typingincolor.github.io/blog/2012/09/22/facebook-london-hackathon-2012/"/>
+    <updated>2012-09-22T10:05:34+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2012/09/22/facebook-london-hackathon-2012</id>
+    <content type="html"><![CDATA[<p>Yesterday I went to Facebook’s London office for my first “Hackathon”.</p>
+
+<p>We got started around 0930, and had a few hours of talks from the Facebook team as well as a number of their partners. The guys from Facebook talked to us about Open Graph, mobile development and Facebook games. The talks were a good introduction to Facebook’s various apis that we would be using for during the afternoon’s hacking. Three of Facebook’s partners then gave a very quick overview of their services.</p>
+
+<p>We saw presentations from:</p>
+
+<ul>
+  <li><a href="http://www.twilio.com/">Twilio</a>, who provide all sorts of telephony goodness</li>
+  <li><a href="http://www.deezer.com/en/">Deezer</a>, a web based music platform</li>
+  <li><a href="http://pusher.com">Pusher</a>, a way of doing real time magic</li>
+</ul>
+
+<p><img class="right" src="/images/events/hackathon.jpg" title="hackathon" >
+Once we’d finished we moved on the hacking. Everybody split into teams and had 7 hours to build something using the technologies discussed in the morning. Various prizes were on offer for the best hacks, they just had to use the Facebook platform.</p>
+
+<p>Ben and I were at a slight disadvantage in that there were only two of us in our team, and we wanted to build something that we could use a work. We had a few ideas over the previous couple of days and decided to build a store visit application. Basically, a customer goes to app’s Facebook page, chooses which store they visited and are asked to submit a review of the store. The review is posted to Open Graph and will appear on the customer’s Facebook timeline. When a customer visits the page of the store, they will see all the reviews for that store and be able to like, comment etc on them.</p>
+
+<p>We also wanted to use Twilio to contact the customer if their review was negative to try to address whatever problem the customer had.</p>
+
+<p>We’re kind of limited to our technology choice seeing as we do things in Java, so we built our app on Tomcat using Spring MVC. We got to the point of posting the customer’s review to Open Graph, but we didn’t really have anything in a fit state to present to the group.</p>
+
+<p>Most of our problems were around our choice of technology. Spring is a great framework, but it can be a bit of a pain to configure properly. I tried to get hibernate working with hsqldb but failed miserably and spent 90 minutes trying to persist our reviews. In the end I gave up, installed mongodb and got it working in about 20 minutes. I used the <a href="http://progrium.com/localtunnel/">localtunnel</a> gem  to allow Facebook access to my dev machine, but it kept on timing out which meant I had to continually reconfigure the app in Facebook. I used <a href="http://twitter.github.com/bootstrap/">bootstrap</a> for the colours and shapes, but it didn’t work properly in the Facebook canvas iframe.</p>
+
+<p>Going forward, I’m going to look at <a href="http://java.heroku.com/">Java Heroku</a> which will remove the need for localtunnel. I need to play with bootstrap to get that to work properly and I will get the persistence layer working before I start when I go to my next hackathon.</p>
+
+<p>All in all, it was a very useful day. I don’t get much chance to code anymore, let alone for 7 hours straight. The facilities provided by Facebook were excellent and all their engineers were very helpful.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Facebook Open Graph]]></title>
+    <link href="http://typingincolor.github.io/blog/2012/07/25/facebook-open-graph/"/>
+    <updated>2012-07-25T23:12:17+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2012/07/25/facebook-open-graph</id>
+    <content type="html"><![CDATA[<p>I left my job at the Hut Group after 3.5 years and decided to move on to Morrisons to help them develop their online offering. The first thing I did on joining them was look at Open Graph in Facebook for a project they are working on.</p>
+
+<p>Open Graph allows you to specify an action and an object, and do the action to the object. It will put the fact you’ve done this on you Facebook timeline for all your friends to see. On the AutoTrader website for example, you can “want” a car. The demo app from Facebook shows you how to “cook” a recipe. The possibilities are endless.</p>
+
+<p>I found the whole thing really interesting. I got to write some javascript which I’ve not really done much of, and figuring out how to stop a user doing the same action twice was quite challenging. </p>
+
+<p>Testing my app was a bit of a faff, as I was running on a corporate network and you need to allow Facebook access to your website. I managed to get around it by setting up a reverse ssh tunnel to an Amazon EC2 instance and forwarding the web requests from there to my application. It took me a while to get working, but it is actually dead simple once you know what you are doing. </p>
+
+<p>The Facebook documentation is quite good, and the tutorial is really easy to follow. I got two relatively complicated apps going in about three days and I’m not great a javascript…</p>
+
+<p>You can find out more by going to <a href="https://developers.facebook.com/docs/opengraph/tutorial/">here</a>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Trying haml, coffeescript, ruby and sinatra]]></title>
+    <link href="http://typingincolor.github.io/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra/"/>
+    <updated>2012-05-31T18:22:51+01:00</updated>
+    <id>http://typingincolor.github.io/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra</id>
+    <content type="html"><![CDATA[<p>I am looking at ways that I can build a web front-end for a system I am going to develop at work. Basically, I want to have a number of web services that will provide the data and then write a front end in html and java script to consume these services and display the data to a user.</p>
+
+<p>I’m not a javascript expert, can do a bit of html and really didn’t want to do use java as it isn’t the quickest thing develop a prototype.</p>
+
+<p>In the end I chose <a href="http://www.sinatrarb.com/">Sinatra</a>, a DSL for quickly creating web applications in Ruby with minimal effort. It is stupidly easy to create a web application! For example:</p>
+
+<p>``` ruby <br />
+require ‘sinatra’</p>
+
+<p>get ‘/hi’ do
+    “Hello World!”
+```</p>
+
+<p>Will return “Hello World!” when you go to http://localhost:4567/hi. I used the ROXML gem to squirt out an xml representation of a ruby object and I had a web service in around 30 lines of ruby.</p>
+
+<p>So I had my web service up and running. Now to consume it… As I’ve mentioned before, I like <a href="http://twitter.github.com/bootstrap/">bootstrap</a> as it is really easy to write a good looking interface without having to know loads of CSS. HTML is ok, but it can look a bit of a mess, so I decided to use <a href="http://haml.info/">Haml</a>. It gets transformed into html, but it makes your markup look beautiful. Using it you have to go out of your way to write nasty html. Indentation is significant (a la python) so you have to right it neatly!</p>
+
+<p>The final piece of the jigsaw is <a href="http://coffeescript.org/">coffeescript</a>, a little language that compile into javascript. The aim of coffeescript is to expose the good bits of javascript in a simple way. I like it because it removes the need for endless curly brackets and the function keyword.</p>
+
+<p>All in all, I’m pretty pleased with the results. None of it is earth shattering, but the progress bars are pretty neat and I like the way I’ve built the results table.</p>
+
+<p>If you want to see the code, you can clone it using git </p>
+
+<p><code>  
+    git clone https://bitbucket.org/typingincolor/ajax-prototype.git
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

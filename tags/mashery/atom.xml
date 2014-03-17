@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: mashery | The Land of Shattered Dreams]]></title>
   <link href="http://typingincolor.github.io/tags/mashery/atom.xml" rel="self"/>
   <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:31:15+00:00</updated>
+  <updated>2014-03-17T13:32:38+00:00</updated>
   <id>http://typingincolor.github.io/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -103,7 +103,7 @@ from Apigee was easy to follow and I got things up and running pretty quickly.</
 <p>Mulesoft is a relatively new player in the API management space, primarily being
 known for their ESB.The biggest difference between the the solution I built with
 this and the others was that Mulesoft provided the login application, with no
-ability to develop your own. It is relatively simple to plugin this login app
+ability to develop your own. It is relatively simple to plug this login app
 into an existing database, and you do have control over how it looks but it does
 mean you have to know about <a href="http://projects.spring.io/spring-framework/">Spring</a> and Java (both of which I do). Getting
 an access token was easy, and wiring in the API was pretty simple. I did like

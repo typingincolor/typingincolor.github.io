@@ -108,6 +108,8 @@ an exercise to learn a bit about wordpress, and was a place where I &hellip;">
 
 <time datetime="2013-04-28T20:33:00+01:00" pubdate data-updated="true">Apr 28<span>th</span>, 2013</time>
         
+         | <a href="#disqus_thread">Comments</a>
+        
       </p>
     
   </header>
@@ -168,7 +170,7 @@ push the content up to <a href="https://www.heroku.com/">heroku</a> where they a
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://typingincolor.github.io/blog/2013/04/28/welcome/" data-via="" data-counturl="http://typingincolor.github.io/blog/2013/04/28/welcome/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://typingincolor.github.io/blog/2013/04/28/welcome/" data-via="typingincolor" data-counturl="http://typingincolor.github.io/blog/2013/04/28/welcome/" >Tweet</a>
   
   
   
@@ -185,6 +187,12 @@ push the content up to <a href="https://www.heroku.com/">heroku</a> where they a
     </p>
   </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -217,7 +225,45 @@ push the content up to <a href="https://www.heroku.com/">heroku</a> where they a
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/typingincolor">@typingincolor</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
 
+        github.showRepos({
+            user: 'typingincolor',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus googleplus-hidden">
+  <h1>
+    <a href="https://plus.google.com/AndrewBraithwaite?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 <section>
@@ -260,6 +306,22 @@ push the content up to <a href="https://www.heroku.com/">heroku</a> where they a
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'landofshattereddreams';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://typingincolor.github.io/blog/2013/04/28/welcome/';
+        var disqus_url = 'http://typingincolor.github.io/blog/2013/04/28/welcome/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 

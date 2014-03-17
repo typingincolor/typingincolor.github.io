@@ -9,7 +9,8 @@
   <meta name="author" content="Andrew Braithwaite">
 
   
-  <meta name="description" content="One of the projects I am working on at work is revamping our mobile applications. We are designing a RESTful web service layer that a mobile device &hellip;">
+  <meta name="description" content="I&#8217;ve not been able to blog for a while as a lot of things have been going on.
+In November I left Morrisons to take a Solutions Architect role &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +87,138 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/03/17/adventures-in-oauth2/">Adventures in OAuth2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-17T09:01:00+00:00" pubdate data-updated="true">Mar 17<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img class="left" src="/images/logos/oauth-2-sm.png" />
+I&#8217;ve not been able to blog for a while as a lot of things have been going on.
+In November I left <a href="http://www.morrisons.co.uk">Morrisons</a> to take a Solutions Architect role at <a href="http://www.laterooms.com">Laterooms</a>
+and it has taken me a while to get settled in and to work out what&#8217;s going on.</p>
+
+<p>One of the things I am looking at for Laterooms is how we use APIs to power our
+platform. We&#8217;ve developed <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">RESTful APIs</a> that are used by our mobile applications
+but we can do a whole lot more with our APIs. Long term, I&#8217;d like to build our entire
+platform on APIs using them as the base for our mobile apps, the websites and our
+integration with affiliates and hotel providers. We&#8217;ve got a long way to go, but
+I guess a journey of a thousand miles begins with a single step.</p>
+
+<p>One of the key considerations we have when designing our API platform is controlling
+who has access to our data. We want to build a platform capable of allowing <em>authorized</em>
+consumers unlimited access to Lateroom&#8217;s data. Note <em>authorized</em> consumers, some data
+is public and we want to make it as easy as possible to access it; some data is
+most definitely not public and access to it has to be limited.</p>
+
+<p>To help us control access to our APIs I have been looking at various API management
+platform and how they implement OAuth2 to provide authorized access to an API. The
+three I talk about in this post are from <a href="http://www.apigee.com">Apigee</a>, <a href="http://www.mashery.com">Mashery</a> and <a href="http://www.mulesoft.com">Mulesoft</a>.</p>
+
+<h3 id="oauth2">OAuth2</h3>
+<p>Before we start I supose it is worth talking a bit about <a href="http://oauth.net/2/">OAuth2</a>. To quote <a href="http://en.wikipedia.org/wiki/OAuth">wikipedia</a>:</p>
+
+<blockquote>
+  <p>OAuth is an open standard for authorization. OAuth provides a method for clients
+to access server resources on behalf of a resource owner such as a different
+client or an end-user. It also provides a process for end-users to authorize
+third-party access to their server resources without sharing their credentials,
+typically a username and password pair, using user-agent redirections.</p>
+</blockquote>
+
+<p>The OAuth2 <a href="http://tools.ietf.org/html/rfc6749">spec</a> is a long and complicated document with many, many options.
+To compare the three management platforms I built a simple API hosted on <a href="https://heroku.com/">Heroku</a>.
+I also wrote a simple client web app that consumed the API again hosted on Heroku.
+Finally I wired in each of the API management platforms to protect the API and
+to ensure only authenticated users could use the client.</p>
+
+<p>I used the &#8220;Authorization Code&#8221; flow to authenticate and authorise the client users,
+which means that the client does not need any knowledge of the user&#8217;s credentials
+and all the authentication and authorization is done on the API side.</p>
+
+<p>At a high level, every API request by the client requires an access token to call a
+protected resource. The steps to get an access token are:</p>
+
+<ul>
+  <li>the user authenticates themselves using a web application hosted on the API side</li>
+  <li>the client application is passed an authorization code via a callback method.
+The client exchanges this code for an access token, authenticating itself with a
+client ID and secret.</li>
+  <li>the client attaches the access token to any API calls</li>
+</ul>
+
+<p>Each of the API management platform achieves this in a slightly different way.</p>
+
+<h3 id="mashery">Mashery</h3>
+<p>To implement the flow in Mashery I wrote a simple node app that presented a user
+a screen to enter their username and password and which validated them. The user
+clicks on a link in the client app and is taken to this validation screen.</p>
+
+<p>If the validation succeeds the web app uses a Mashery API to generate an authorization
+code and this is passed bck to the client via it&#8217;s callback url. The client makes a call
+to a &#8220;token&#8221; endpoint configured in the Mashery API and which responds with an access token.
+This token is passed with every subsequent API call and the Mashery platform ensures that
+it is valid.</p>
+
+<p>This is the implementation I tried last, and it took me very little effort to
+change the code a developed using Apigee to work with Mashery.</p>
+
+<h3 id="apigee">Apigee</h3>
+<p>Apigee&#8217;s approach is slightly different to Mashery. I had to expose three
+endpoints in Apigee. The first endpoint redirects to the login application where
+the user enters their details. If the details are correct, the login app calls
+the second endpoint which generates an authorization code and passes it to the
+client app via its callback url. The client then uses the third endpoint to
+exchange the code for an access token.</p>
+
+<p>It took me a while to remember how OAuth works, but once I had that the example
+from Apigee was easy to follow and I got things up and running pretty quickly.</p>
+
+<h3 id="mulesoft">Mulesoft</h3>
+<p>Mulesoft is a relatively new player in the API management space, primarily being
+known for their ESB.The biggest difference between the the solution I built with
+this and the others was that Mulesoft provided the login application, with no
+ability to develop your own. It is relatively simple to plugin this login app
+into an existing database, and you do have control over how it looks but it does
+mean you have to know about <a href="http://projects.spring.io/spring-framework/">Spring</a> and Java (both of which I do). Getting
+an access token was easy, and wiring in the API was pretty simple. I did like
+that you can run everything on a local machine whilst developing - but it also
+required the most technical knowledge to get working.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>All three platforms made it simple to implement the required functionality.
+Mashery and Apigee&#8217;s approach are pretty similar (although the platforms are
+quite different), and Mulesoft&#8217;s approach also work&#8217;s well.</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -650,50 +783,6 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/03/09/playing-with-bootstrap/">Playing With Bootstrap</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-03-09T00:09:38+00:00" pubdate data-updated="true">Mar 9<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I’m not a big fan of developing user interfaces. Back in the day I used a tool called OpenROAD to write GUIs for database applications. It was a bit like VB, in that it was an event driven 4GL, but it stored everything in an Ingres database. You couldn’t do proper version control. There was no separation of business logic from presentation logic and you used on grids to position everything. I got quite good at it, but it put me off GUIs for ever.</p>
-
-<p>Moving forward to the present day. I work for one of the UK’s largest online retailers and not liking GUIs is a bit of a disadvantage. I can knock up a webpage pretty quickly and can even do css to a degree, but I’m far from great and not in the same league as our front-end dev team.</p>
-
-<p>I’ve been listening in on a few conversations and Bootstrap from Twitter came up. Bootstrap aims to provide Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions. I have to admit it seems to do it pretty darn well. I’ve been having a play with it this evening and have managed to knock up a couple of decent (in my opinion) looking screens pretty easily. I’ve got a functional nav-bar, some drop down menus and a reasonable looking form. All the javascript you need comes with it, the css is easy to apply to the html and there are some nice looking icons with it as well. All in all it’s been a pretty painless experience.</p>
-
-<p>It might be time to buy some flip-flops, get a couple of shirts from Threadless and see if I can join the design team… (although my complete lack of talent will probably count against me).</p>
-
-<p>If you interested, Bootstrap can be found <a href="http://twitter.github.com/bootstrap/index.html">here</a>.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -707,6 +796,10 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/03/17/adventures-in-oauth2/">Adventures in OAuth2</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/06/27/documenting-apis/">Documenting APIs</a>
@@ -724,10 +817,6 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
         <a href="/blog/2013/04/10/playing-with-rest-assured/">Playing with Rest-Assured</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2012/09/22/facebook-london-hackathon-2012/">Facebook London Hackathon 2012</a>
-      </li>
-    
   </ul>
 </section>
 
@@ -737,25 +826,25 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
 <section>
   <h1>Tags</h1>
   <ul class="tag-cloud">
+<li><a style="font-size: 90%" href="/tags/api/">API</a></li>
 <li><a style="font-size: 108%" href="/tags/agile-development/">Agile Development</a></li>
-<li><a style="font-size: 60%" href="/tags/andrew-braithwaite/">Andrew Braithwaite</a></li>
+<li><a style="font-size: 60%" href="/tags/project-management/">Project Management</a></li>
+<li><a style="font-size: 90%" href="/tags/restful/">RESTful</a></li>
 <li><a style="font-size: 90%" href="/tags/alfred/">alfred</a></li>
+<li><a style="font-size: 90%" href="/tags/apigee/">apigee</a></li>
 <li><a style="font-size: 108%" href="/tags/applescript/">applescript</a></li>
 <li><a style="font-size: 108%" href="/tags/code/">code</a></li>
 <li><a style="font-size: 90%" href="/tags/css/">css</a></li>
 <li><a style="font-size: 90%" href="/tags/css3/">css3</a></li>
 <li><a style="font-size: 165%" href="/tags/development/">development</a></li>
 <li><a style="font-size: 90%" href="/tags/facebook/">facebook</a></li>
-<li><a style="font-size: 60%" href="/tags/haml/">haml</a></li>
 <li><a style="font-size: 90%" href="/tags/html/">html</a></li>
 <li><a style="font-size: 90%" href="/tags/java/">java</a></li>
 <li><a style="font-size: 130%" href="/tags/javascript/">javascript</a></li>
 <li><a style="font-size: 60%" href="/tags/joke/">joke</a></li>
-<li><a style="font-size: 60%" href="/tags/outlook/">outlook</a></li>
-<li><a style="font-size: 60%" href="/tags/review/">review</a></li>
 <li><a style="font-size: 108%" href="/tags/ruby/">ruby</a></li>
+<li><a style="font-size: 60%" href="/tags/sinatra/">sinatra</a></li>
 <li><a style="font-size: 90%" href="/tags/things/">things</a></li>
-<li><a style="font-size: 60%" href="/tags/tools/">tools</a></li>
 <li><a style="font-size: 121%" href="/tags/work/">work</a></li>
 
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: mulesoft | The Land of Shattered Dreams]]></title>
   <link href="http://typingincolor.github.io/tags/mulesoft/atom.xml" rel="self"/>
   <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:30:12+00:00</updated>
+  <updated>2014-03-17T13:31:15+00:00</updated>
   <id>http://typingincolor.github.io/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -80,7 +80,7 @@ a screen to enter their username and password and which validated them. The user
 clicks on a link in the client app and is taken to this validation screen.</p>
 
 <p>If the validation succeeds the web app uses a Mashery API to generate an authorization
-code and this is passed bck to the client via it’s callback url. The client makes a call
+code and this is passed back to the client via it’s callback url. The client makes a call
 to a “token” endpoint configured in the Mashery API and which responds with an access token.
 This token is passed with every subsequent API call and the Mashery platform ensures that
 it is valid.</p>

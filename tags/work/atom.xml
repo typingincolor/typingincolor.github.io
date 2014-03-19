@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: work | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/work/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/work/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Hut Group's first Code Dojo ]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/05/16/the-hut-groups-first-code-dojo/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo/"/>
     <updated>2012-05-16T21:03:02+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/05/16/the-hut-groups-first-code-dojo</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/logos/dojo.jpg"></p>
 
 <p>A couple of years ago, one of our technical architects at the Hut Group ran a few code dojos to give the team experience of TDD and Pair Programming. The team has grown massively in the meantime, so I thought it would be a good opportunity to try it again.</p>
@@ -65,18 +65,18 @@
   
   <entry>
     <title type="html"><![CDATA[Software Engineering Explained]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/09/14/software-engineering-explained/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/09/14/software-engineering-explained/"/>
     <updated>2011-09-14T22:20:57+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/09/14/software-engineering-explained</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/09/14/software-engineering-explained</id>
     <content type="html"><![CDATA[<p><a href="/images/funny/software-engineering-explained.png"><img src="/images/funny/software-engineering-explained.png" alt="" /></a></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[My First Rails App...]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/03/17/my-first-rails-app/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app/"/>
     <updated>2011-03-17T00:13:53+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/03/17/my-first-rails-app</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app</id>
     <content type="html"><![CDATA[<p><a href="http://rubyonrails.org"><img class="left" src="/images/logos/rails.png"></a> 
 I have worked in IT for the best part of 15 years, most of that in technical roles. I started as a Trainee Programmer in the IT department of a large bank, and have ended up as the Head of Development at at one of the UK’s fastest growing technology companies. When I started work I developed in C and a 4GL called  OpenROAD, and I was pretty good at them…</p>
 
@@ -116,9 +116,9 @@ I quite like Ruby as  a language. It is weakly typed which makes things a lot e
   
   <entry>
     <title type="html"><![CDATA[The Art of Agile Development - Shore & Warden]]></title>
-    <link href="http://typingincolor.github.io/blog/2010/06/08/the-art-of-agile-development-shore-warden/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2010/06/08/the-art-of-agile-development-shore-warden/"/>
     <updated>2010-06-08T10:08:13+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2010/06/08/the-art-of-agile-development-shore-warden</id>
+    <id>http://www.landofshattereddreams.com/blog/2010/06/08/the-art-of-agile-development-shore-warden</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/the-art-of-agile-development-shore-warden/art-of-agile-development.jpg">
 We’re slowly introducing Agile Development at work to help us deliver the systems the business needs to continue our impressive growth.</p>
 

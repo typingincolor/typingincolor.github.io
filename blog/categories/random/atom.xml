@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Random | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/blog/categories/random/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/blog/categories/random/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Create Things tasks from within outlook]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/12/15/create-things-tasks-from-within-outlook/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/12/15/create-things-tasks-from-within-outlook/"/>
     <updated>2011-12-15T23:20:27+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/12/15/create-things-tasks-from-within-outlook</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/12/15/create-things-tasks-from-within-outlook</id>
     <content type="html"><![CDATA[<p>I use <a href="http://www.red-sweater.com/fastscripts/">FastScripts</a> to run this, and it creates a Things task for each message you’ve selected in Outlook.</p>
 
 <p>``` applescript  <br />
@@ -50,9 +50,9 @@ end tell ```
   
   <entry>
     <title type="html"><![CDATA[Alfred Things plugin]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/12/15/alfred-things-plugin/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/12/15/alfred-things-plugin/"/>
     <updated>2011-12-15T23:17:04+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/12/15/alfred-things-plugin</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/12/15/alfred-things-plugin</id>
     <content type="html"><![CDATA[<p>My second applescript for alfred. This time it creates a things task.</p>
 
 <p><code>applescript   
@@ -69,9 +69,9 @@ end alfred_script
   
   <entry>
     <title type="html"><![CDATA[Alfred ssh plugin [Updated]]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/12/13/alfred-ssh-plugin/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/12/13/alfred-ssh-plugin/"/>
     <updated>2011-12-13T00:29:41+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/12/13/alfred-ssh-plugin</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/12/13/alfred-ssh-plugin</id>
     <content type="html"><![CDATA[<p>I use Alfred (<a href="http://www.alfredapp.com/">http://www.alfredapp.com/</a>) to speed things up on my mac and it is a brilliant bit of software. I pay for the powerpack and have written a little bit of applescript to allow me to ssh to a server from the launcher. </p>
 
 <p>I have it set up to so that “ssh server username” will connect to server as username. If you don’t put it a username it will default to “default”.</p>
@@ -135,9 +135,9 @@ end alfred_script ```
   
   <entry>
     <title type="html"><![CDATA[Management Monkey]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/05/25/management-monkey/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/05/25/management-monkey/"/>
     <updated>2011-05-25T15:58:23+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/05/25/management-monkey</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/05/25/management-monkey</id>
     <content type="html"><![CDATA[<p>As a developer of long experience, and a manager more recently this joke appealed to me:</p>
 
 <p>A tourist walked into a pet shop and was looking at the animals on display. While he was there,another customer walked in and said to the shopkeeper, “I’ll have a C monkey please.” The shopkeeper nodded, went over to a cage at the side of the shop and took out a monkey. He fitted a collar and leash, handed to the customer,saying, “That’ll be $5,000.”</p>
@@ -157,9 +157,9 @@ end alfred_script ```
   
   <entry>
     <title type="html"><![CDATA[Happy Birthday to me]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/04/25/happy-birthday-to-me/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/04/25/happy-birthday-to-me/"/>
     <updated>2011-04-25T10:00:13+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/04/25/happy-birthday-to-me</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/04/25/happy-birthday-to-me</id>
     <content type="html"><![CDATA[<p>So another year gone and I have reached the ripe old age of 36. I guess I will have to accept that I am now middle aged. The chances of me playing centre-half for City or becoming a rock god are probably now on the remote side, so what I am going to do for the second half of my life?</p>
 
 <p>The first half has been pretty eventful. I’ve been married for the best part of 14 years to the girl I met at university, and despite what I may say, I don’t regret any of it.</p>

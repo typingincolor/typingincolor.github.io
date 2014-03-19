@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: things | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/things/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/things/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Create Things tasks from within outlook]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/12/15/create-things-tasks-from-within-outlook/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/12/15/create-things-tasks-from-within-outlook/"/>
     <updated>2011-12-15T23:20:27+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/12/15/create-things-tasks-from-within-outlook</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/12/15/create-things-tasks-from-within-outlook</id>
     <content type="html"><![CDATA[<p>I use <a href="http://www.red-sweater.com/fastscripts/">FastScripts</a> to run this, and it creates a Things task for each message you’ve selected in Outlook.</p>
 
 <p>``` applescript  <br />
@@ -50,9 +50,9 @@ end tell ```
   
   <entry>
     <title type="html"><![CDATA[Alfred Things plugin]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/12/15/alfred-things-plugin/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/12/15/alfred-things-plugin/"/>
     <updated>2011-12-15T23:17:04+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/12/15/alfred-things-plugin</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/12/15/alfred-things-plugin</id>
     <content type="html"><![CDATA[<p>My second applescript for alfred. This time it creates a things task.</p>
 
 <p><code>applescript   

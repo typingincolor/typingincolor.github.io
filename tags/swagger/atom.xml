@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: swagger | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/swagger/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/swagger/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Documenting APIs]]></title>
-    <link href="http://typingincolor.github.io/blog/2013/06/27/documenting-apis/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2013/06/27/documenting-apis/"/>
     <updated>2013-06-27T14:37:00+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2013/06/27/documenting-apis</id>
+    <id>http://www.landofshattereddreams.com/blog/2013/06/27/documenting-apis</id>
     <content type="html"><![CDATA[<p>One of the projects I am working on at work is revamping our mobile applications.</p>
 
 <p>We are designing a RESTful web service layer that a mobile device will use to allow a customer to do various things.</p>

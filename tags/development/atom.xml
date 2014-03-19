@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: development | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/development/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/development/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Documenting APIs]]></title>
-    <link href="http://typingincolor.github.io/blog/2013/06/27/documenting-apis/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2013/06/27/documenting-apis/"/>
     <updated>2013-06-27T14:37:00+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2013/06/27/documenting-apis</id>
+    <id>http://www.landofshattereddreams.com/blog/2013/06/27/documenting-apis</id>
     <content type="html"><![CDATA[<p>One of the projects I am working on at work is revamping our mobile applications.</p>
 
 <p>We are designing a RESTful web service layer that a mobile device will use to allow a customer to do various things.</p>
@@ -62,9 +62,9 @@ GET /shopping-cart
   
   <entry>
     <title type="html"><![CDATA[Playing with Rest-Assured]]></title>
-    <link href="http://typingincolor.github.io/blog/2013/04/10/playing-with-rest-assured/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2013/04/10/playing-with-rest-assured/"/>
     <updated>2013-04-10T11:28:31+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2013/04/10/playing-with-rest-assured</id>
+    <id>http://www.landofshattereddreams.com/blog/2013/04/10/playing-with-rest-assured</id>
     <content type="html"><![CDATA[<p>We are moving to a service oriented architecture at work based using technology from <a href="http://apigee.com">Apigee</a> which is helping us build securable and scalable APIs for our applications to use.</p>
 
 <p>Our APIs are based on <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">RESTful Web Services</a> with <a href="http://en.wikipedia.org/wiki/JSON">JSON</a> message bodies. This is means that they can be used by anything that can send a HTTP request, including a browser.</p>
@@ -106,9 +106,9 @@ expect().body("lotto.lottoId", equalTo(5)).when().get("/lotto");
   
   <entry>
     <title type="html"><![CDATA[Facebook London Hackathon 2012]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/09/22/facebook-london-hackathon-2012/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/09/22/facebook-london-hackathon-2012/"/>
     <updated>2012-09-22T10:05:34+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/09/22/facebook-london-hackathon-2012</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/09/22/facebook-london-hackathon-2012</id>
     <content type="html"><![CDATA[<p>Yesterday I went to Facebook’s London office for my first “Hackathon”.</p>
 
 <p>We got started around 0930, and had a few hours of talks from the Facebook team as well as a number of their partners. The guys from Facebook talked to us about Open Graph, mobile development and Facebook games. The talks were a good introduction to Facebook’s various apis that we would be using for during the afternoon’s hacking. Three of Facebook’s partners then gave a very quick overview of their services.</p>
@@ -141,9 +141,9 @@ Once we’d finished we moved on the hacking. Everybody split into teams and had
   
   <entry>
     <title type="html"><![CDATA[Facebook Open Graph]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/07/25/facebook-open-graph/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/07/25/facebook-open-graph/"/>
     <updated>2012-07-25T23:12:17+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/07/25/facebook-open-graph</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/07/25/facebook-open-graph</id>
     <content type="html"><![CDATA[<p>I left my job at the Hut Group after 3.5 years and decided to move on to Morrisons to help them develop their online offering. The first thing I did on joining them was look at Open Graph in Facebook for a project they are working on.</p>
 
 <p>Open Graph allows you to specify an action and an object, and do the action to the object. It will put the fact you’ve done this on you Facebook timeline for all your friends to see. On the AutoTrader website for example, you can “want” a car. The demo app from Facebook shows you how to “cook” a recipe. The possibilities are endless.</p>
@@ -161,9 +161,9 @@ Once we’d finished we moved on the hacking. Everybody split into teams and had
   
   <entry>
     <title type="html"><![CDATA[The Hut Group's first Code Dojo ]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/05/16/the-hut-groups-first-code-dojo/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo/"/>
     <updated>2012-05-16T21:03:02+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/05/16/the-hut-groups-first-code-dojo</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/logos/dojo.jpg"></p>
 
 <p>A couple of years ago, one of our technical architects at the Hut Group ran a few code dojos to give the team experience of TDD and Pair Programming. The team has grown massively in the meantime, so I thought it would be a good opportunity to try it again.</p>

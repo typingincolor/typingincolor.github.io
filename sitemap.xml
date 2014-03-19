@@ -2,112 +2,118 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
-            http://typingincolor.github.io/blog/2010/06/08/the-art-of-agile-development-shore-warden/
+            http://www.landofshattereddreams.com/blog/2010/06/08/the-art-of-agile-development-shore-warden/
         </loc>
         <lastmod>2014-02-11T08:31:10+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2011/03/17/my-first-rails-app/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app/</loc>
         <lastmod>2014-02-11T08:31:10+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2011/03/25/yagni/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2011/03/25/yagni/</loc>
         <lastmod>2014-02-11T08:31:10+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2011/04/25/happy-birthday-to-me/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2011/04/25/happy-birthday-to-me/</loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2011/05/25/management-monkey/</loc>
-        <lastmod>2014-02-07T14:18:03+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://typingincolor.github.io/blog/2011/09/14/software-engineering-explained/</loc>
-        <lastmod>2014-02-11T08:31:10+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://typingincolor.github.io/blog/2011/12/13/alfred-ssh-plugin/</loc>
-        <lastmod>2014-02-07T14:18:03+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://typingincolor.github.io/blog/2011/12/15/alfred-things-plugin/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2011/05/25/management-monkey/</loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://typingincolor.github.io/blog/2011/12/15/create-things-tasks-from-within-outlook/
+            http://www.landofshattereddreams.com/blog/2011/09/14/software-engineering-explained/
+        </loc>
+        <lastmod>2014-02-11T08:31:10+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.landofshattereddreams.com/blog/2011/12/13/alfred-ssh-plugin/</loc>
+        <lastmod>2014-02-07T14:18:03+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.landofshattereddreams.com/blog/2011/12/15/alfred-things-plugin/</loc>
+        <lastmod>2014-02-07T14:18:03+00:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://www.landofshattereddreams.com/blog/2011/12/15/create-things-tasks-from-within-outlook/
         </loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2012/03/09/playing-with-bootstrap/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2012/03/09/playing-with-bootstrap/</loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2012/05/15/more-bootstrap/</loc>
-        <lastmod>2014-02-11T08:31:10+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://typingincolor.github.io/blog/2012/05/16/the-hut-groups-first-code-dojo/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2012/05/15/more-bootstrap/</loc>
         <lastmod>2014-02-11T08:31:10+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://typingincolor.github.io/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra/
+            http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo/
+        </loc>
+        <lastmod>2014-02-11T08:31:10+00:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://www.landofshattereddreams.com/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra/
         </loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2012/07/25/facebook-open-graph/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2012/07/25/facebook-open-graph/</loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2012/09/22/facebook-london-hackathon-2012/</loc>
+        <loc>
+            http://www.landofshattereddreams.com/blog/2012/09/22/facebook-london-hackathon-2012/
+        </loc>
         <lastmod>2014-02-11T08:31:10+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2013/04/10/playing-with-rest-assured/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2013/04/10/playing-with-rest-assured/</loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2013/04/28/welcome/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2013/04/28/welcome/</loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2013/05/16/brompton-for-sale/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2013/05/16/brompton-for-sale/</loc>
         <lastmod>2014-02-14T08:59:54+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2013/06/27/documenting-apis/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2013/06/27/documenting-apis/</loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/2014/03/17/adventures-in-oauth2/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/2014/03/17/adventures-in-oauth2/</loc>
         <lastmod>2014-03-17T13:32:16+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/about/</loc>
+        <loc>http://www.landofshattereddreams.com/about/</loc>
         <lastmod>2014-03-05T10:22:24+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/blog/archives/</loc>
+        <loc>http://www.landofshattereddreams.com/blog/archives/</loc>
         <lastmod>2014-03-17T13:32:16+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/contact-me/</loc>
+        <loc>http://www.landofshattereddreams.com/contact-me/</loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/cv/</loc>
+        <loc>http://www.landofshattereddreams.com/cv/</loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/</loc>
+        <loc>http://www.landofshattereddreams.com/</loc>
         <lastmod>2014-03-17T13:32:16+00:00</lastmod>
     </url>
     <url>
-        <loc>http://typingincolor.github.io/robots.txt</loc>
+        <loc>http://www.landofshattereddreams.com/robots.txt</loc>
         <lastmod>2014-02-07T14:18:03+00:00</lastmod>
     </url>
 </urlset>

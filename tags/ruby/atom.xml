@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: ruby | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/ruby/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/ruby/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Trying haml, coffeescript, ruby and sinatra]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra/"/>
     <updated>2012-05-31T18:22:51+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra</id>
     <content type="html"><![CDATA[<p>I am looking at ways that I can build a web front-end for a system I am going to develop at work. Basically, I want to have a number of web services that will provide the data and then write a front end in html and java script to consume these services and display the data to a user.</p>
 
 <p>I’m not a javascript expert, can do a bit of html and really didn’t want to do use java as it isn’t the quickest thing develop a prototype.</p>
@@ -49,9 +49,9 @@ require ‘sinatra’</p>
   
   <entry>
     <title type="html"><![CDATA[YAGNI]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/03/25/yagni/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/03/25/yagni/"/>
     <updated>2011-03-25T00:02:37+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/03/25/yagni</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/03/25/yagni</id>
     <content type="html"><![CDATA[<p>YAGNI or You Ain’t Going To Need It - the battle cry of the committed agilista. Software developers, myself included, have a rather annoying tendency to over engineer their solutions. We sit there thinking that with a little bit of extra effort we can build a framework or make the code easily extensible so that when the next problem comes along it will take us no time at all to build a solution.</p>
 
 <p>There just two problems:</p>
@@ -71,9 +71,9 @@ require ‘sinatra’</p>
   
   <entry>
     <title type="html"><![CDATA[My First Rails App...]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/03/17/my-first-rails-app/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app/"/>
     <updated>2011-03-17T00:13:53+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/03/17/my-first-rails-app</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app</id>
     <content type="html"><![CDATA[<p><a href="http://rubyonrails.org"><img class="left" src="/images/logos/rails.png"></a> 
 I have worked in IT for the best part of 15 years, most of that in technical roles. I started as a Trainee Programmer in the IT department of a large bank, and have ended up as the Head of Development at at one of the UK’s fastest growing technology companies. When I started work I developed in C and a 4GL called  OpenROAD, and I was pretty good at them…</p>
 

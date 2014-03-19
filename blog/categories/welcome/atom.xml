@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: welcome | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/blog/categories/welcome/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/blog/categories/welcome/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Welcome to the Land of Shattered Dreams]]></title>
-    <link href="http://typingincolor.github.io/blog/2013/04/28/welcome/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2013/04/28/welcome/"/>
     <updated>2013-04-28T20:33:00+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2013/04/28/welcome</id>
+    <id>http://www.landofshattereddreams.com/blog/2013/04/28/welcome</id>
     <content type="html"><![CDATA[<p>I’ve been blogging at as <a href="http://typingincolor.com">typingincolor</a> for about three years. It started as
 an exercise to learn a bit about wordpress, and was a place where I reviewed 
 whatever DVDs and books I’d been looking at. </p>

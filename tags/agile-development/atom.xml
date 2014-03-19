@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Agile Development | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/agile-development/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/agile-development/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Hut Group's first Code Dojo ]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/05/16/the-hut-groups-first-code-dojo/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo/"/>
     <updated>2012-05-16T21:03:02+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/05/16/the-hut-groups-first-code-dojo</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/logos/dojo.jpg"></p>
 
 <p>A couple of years ago, one of our technical architects at the Hut Group ran a few code dojos to give the team experience of TDD and Pair Programming. The team has grown massively in the meantime, so I thought it would be a good opportunity to try it again.</p>
@@ -65,9 +65,9 @@
   
   <entry>
     <title type="html"><![CDATA[YAGNI]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/03/25/yagni/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/03/25/yagni/"/>
     <updated>2011-03-25T00:02:37+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/03/25/yagni</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/03/25/yagni</id>
     <content type="html"><![CDATA[<p>YAGNI or You Ain’t Going To Need It - the battle cry of the committed agilista. Software developers, myself included, have a rather annoying tendency to over engineer their solutions. We sit there thinking that with a little bit of extra effort we can build a framework or make the code easily extensible so that when the next problem comes along it will take us no time at all to build a solution.</p>
 
 <p>There just two problems:</p>
@@ -87,9 +87,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Art of Agile Development - Shore & Warden]]></title>
-    <link href="http://typingincolor.github.io/blog/2010/06/08/the-art-of-agile-development-shore-warden/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2010/06/08/the-art-of-agile-development-shore-warden/"/>
     <updated>2010-06-08T10:08:13+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2010/06/08/the-art-of-agile-development-shore-warden</id>
+    <id>http://www.landofshattereddreams.com/blog/2010/06/08/the-art-of-agile-development-shore-warden</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/the-art-of-agile-development-shore-warden/art-of-agile-development.jpg">
 We’re slowly introducing Agile Development at work to help us deliver the systems the business needs to continue our impressive growth.</p>
 

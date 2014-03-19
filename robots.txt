@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://typingincolor.github.io/sitemap.xml 
+Sitemap: http://www.landofshattereddreams.com/sitemap.xml 

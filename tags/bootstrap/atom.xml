@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: bootstrap | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/bootstrap/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/bootstrap/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Facebook London Hackathon 2012]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/09/22/facebook-london-hackathon-2012/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/09/22/facebook-london-hackathon-2012/"/>
     <updated>2012-09-22T10:05:34+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/09/22/facebook-london-hackathon-2012</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/09/22/facebook-london-hackathon-2012</id>
     <content type="html"><![CDATA[<p>Yesterday I went to Facebook’s London office for my first “Hackathon”.</p>
 
 <p>We got started around 0930, and had a few hours of talks from the Facebook team as well as a number of their partners. The guys from Facebook talked to us about Open Graph, mobile development and Facebook games. The talks were a good introduction to Facebook’s various apis that we would be using for during the afternoon’s hacking. Three of Facebook’s partners then gave a very quick overview of their services.</p>

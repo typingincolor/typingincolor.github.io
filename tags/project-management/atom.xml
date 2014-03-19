@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Project Management | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/project-management/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/project-management/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Management Monkey]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/05/25/management-monkey/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/05/25/management-monkey/"/>
     <updated>2011-05-25T15:58:23+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/05/25/management-monkey</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/05/25/management-monkey</id>
     <content type="html"><![CDATA[<p>As a developer of long experience, and a manager more recently this joke appealed to me:</p>
 
 <p>A tourist walked into a pet shop and was looking at the animals on display. While he was there,another customer walked in and said to the shopkeeper, “I’ll have a C monkey please.” The shopkeeper nodded, went over to a cage at the side of the shop and took out a monkey. He fitted a collar and leash, handed to the customer,saying, “That’ll be $5,000.”</p>

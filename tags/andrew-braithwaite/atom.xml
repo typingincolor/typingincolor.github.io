@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Andrew Braithwaite | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/andrew-braithwaite/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/andrew-braithwaite/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[YAGNI]]></title>
-    <link href="http://typingincolor.github.io/blog/2011/03/25/yagni/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2011/03/25/yagni/"/>
     <updated>2011-03-25T00:02:37+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2011/03/25/yagni</id>
+    <id>http://www.landofshattereddreams.com/blog/2011/03/25/yagni</id>
     <content type="html"><![CDATA[<p>YAGNI or You Ain’t Going To Need It - the battle cry of the committed agilista. Software developers, myself included, have a rather annoying tendency to over engineer their solutions. We sit there thinking that with a little bit of extra effort we can build a framework or make the code easily extensible so that when the next problem comes along it will take us no time at all to build a solution.</p>
 
 <p>There just two problems:</p>

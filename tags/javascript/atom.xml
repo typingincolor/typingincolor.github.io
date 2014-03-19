@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: javascript | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/javascript/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/javascript/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Documenting APIs]]></title>
-    <link href="http://typingincolor.github.io/blog/2013/06/27/documenting-apis/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2013/06/27/documenting-apis/"/>
     <updated>2013-06-27T14:37:00+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2013/06/27/documenting-apis</id>
+    <id>http://www.landofshattereddreams.com/blog/2013/06/27/documenting-apis</id>
     <content type="html"><![CDATA[<p>One of the projects I am working on at work is revamping our mobile applications.</p>
 
 <p>We are designing a RESTful web service layer that a mobile device will use to allow a customer to do various things.</p>
@@ -62,9 +62,9 @@ GET /shopping-cart
   
   <entry>
     <title type="html"><![CDATA[Facebook Open Graph]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/07/25/facebook-open-graph/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/07/25/facebook-open-graph/"/>
     <updated>2012-07-25T23:12:17+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/07/25/facebook-open-graph</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/07/25/facebook-open-graph</id>
     <content type="html"><![CDATA[<p>I left my job at the Hut Group after 3.5 years and decided to move on to Morrisons to help them develop their online offering. The first thing I did on joining them was look at Open Graph in Facebook for a project they are working on.</p>
 
 <p>Open Graph allows you to specify an action and an object, and do the action to the object. It will put the fact you’ve done this on you Facebook timeline for all your friends to see. On the AutoTrader website for example, you can “want” a car. The demo app from Facebook shows you how to “cook” a recipe. The possibilities are endless.</p>
@@ -82,9 +82,9 @@ GET /shopping-cart
   
   <entry>
     <title type="html"><![CDATA[Trying haml, coffeescript, ruby and sinatra]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra/"/>
     <updated>2012-05-31T18:22:51+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/05/31/trying-haml-coffeescript-ruby-and-sinatra</id>
     <content type="html"><![CDATA[<p>I am looking at ways that I can build a web front-end for a system I am going to develop at work. Basically, I want to have a number of web services that will provide the data and then write a front end in html and java script to consume these services and display the data to a user.</p>
 
 <p>I’m not a javascript expert, can do a bit of html and really didn’t want to do use java as it isn’t the quickest thing develop a prototype.</p>
@@ -116,9 +116,9 @@ require ‘sinatra’</p>
   
   <entry>
     <title type="html"><![CDATA[More Bootstrap]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/05/15/more-bootstrap/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/05/15/more-bootstrap/"/>
     <updated>2012-05-15T10:45:47+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/05/15/more-bootstrap</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/05/15/more-bootstrap</id>
     <content type="html"><![CDATA[<p><a href="http://typingincolor-website.s.greenqloud.com/typingincolor.com/wp-content/uploads/2012/05/before1.png"><img class="left" src="/images/bootstrap/before.png" width="150" height="150" title="before before" ></a></p>
 
 <p><a href="http://typingincolor-website.s.greenqloud.com/typingincolor.com/wp-content/uploads/2012/05/after1.png"><img class="left" src="/images/bootstrap/after.png" width="150" height="150" title="after after" ></a>
@@ -131,9 +131,9 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
   
   <entry>
     <title type="html"><![CDATA[Playing with bootstrap]]></title>
-    <link href="http://typingincolor.github.io/blog/2012/03/09/playing-with-bootstrap/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2012/03/09/playing-with-bootstrap/"/>
     <updated>2012-03-09T00:09:38+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2012/03/09/playing-with-bootstrap</id>
+    <id>http://www.landofshattereddreams.com/blog/2012/03/09/playing-with-bootstrap</id>
     <content type="html"><![CDATA[<p>I’m not a big fan of developing user interfaces. Back in the day I used a tool called OpenROAD to write GUIs for database applications. It was a bit like VB, in that it was an event driven 4GL, but it stored everything in an Ingres database. You couldn’t do proper version control. There was no separation of business logic from presentation logic and you used on grids to position everything. I got quite good at it, but it put me off GUIs for ever.</p>
 
 <p>Moving forward to the present day. I work for one of the UK’s largest online retailers and not liking GUIs is a bit of a disadvantage. I can knock up a webpage pretty quickly and can even do css to a degree, but I’m far from great and not in the same league as our front-end dev team.</p>

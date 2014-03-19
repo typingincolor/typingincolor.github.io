@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: book | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/book/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/book/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Art of Agile Development - Shore & Warden]]></title>
-    <link href="http://typingincolor.github.io/blog/2010/06/08/the-art-of-agile-development-shore-warden/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2010/06/08/the-art-of-agile-development-shore-warden/"/>
     <updated>2010-06-08T10:08:13+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2010/06/08/the-art-of-agile-development-shore-warden</id>
+    <id>http://www.landofshattereddreams.com/blog/2010/06/08/the-art-of-agile-development-shore-warden</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/the-art-of-agile-development-shore-warden/art-of-agile-development.jpg">
 We’re slowly introducing Agile Development at work to help us deliver the systems the business needs to continue our impressive growth.</p>
 

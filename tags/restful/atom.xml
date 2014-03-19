@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: RESTful | The Land of Shattered Dreams]]></title>
-  <link href="http://typingincolor.github.io/tags/restful/atom.xml" rel="self"/>
-  <link href="http://typingincolor.github.io/"/>
-  <updated>2014-03-17T13:55:53+00:00</updated>
-  <id>http://typingincolor.github.io/</id>
+  <link href="http://www.landofshattereddreams.com/tags/restful/atom.xml" rel="self"/>
+  <link href="http://www.landofshattereddreams.com/"/>
+  <updated>2014-03-19T16:15:41+00:00</updated>
+  <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Adventures in OAuth2]]></title>
-    <link href="http://typingincolor.github.io/blog/2014/03/17/adventures-in-oauth2/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2014/03/17/adventures-in-oauth2/"/>
     <updated>2014-03-17T09:01:00+00:00</updated>
-    <id>http://typingincolor.github.io/blog/2014/03/17/adventures-in-oauth2</id>
+    <id>http://www.landofshattereddreams.com/blog/2014/03/17/adventures-in-oauth2</id>
     <content type="html"><![CDATA[<p><img class="left" src="/images/logos/oauth-2-sm.png">
 I’ve not been able to blog for a while as a lot of things have been going on.
 In November I left <a href="http://www.morrisons.co.uk">Morrisons</a> to take a Solutions Architect role at <a href="http://www.laterooms.com">Laterooms</a>
@@ -120,9 +120,9 @@ quite different), and Mulesoft’s approach also work’s well.</p>
   
   <entry>
     <title type="html"><![CDATA[Documenting APIs]]></title>
-    <link href="http://typingincolor.github.io/blog/2013/06/27/documenting-apis/"/>
+    <link href="http://www.landofshattereddreams.com/blog/2013/06/27/documenting-apis/"/>
     <updated>2013-06-27T14:37:00+01:00</updated>
-    <id>http://typingincolor.github.io/blog/2013/06/27/documenting-apis</id>
+    <id>http://www.landofshattereddreams.com/blog/2013/06/27/documenting-apis</id>
     <content type="html"><![CDATA[<p>One of the projects I am working on at work is revamping our mobile applications.</p>
 
 <p>We are designing a RESTful web service layer that a mobile device will use to allow a customer to do various things.</p>

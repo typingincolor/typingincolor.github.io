@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: agile | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/agile/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-03-20T10:47:21+00:00</updated>
+  <updated>2014-04-11T13:04:12+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -18,7 +18,7 @@
     <link href="http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo/"/>
     <updated>2012-05-16T21:03:02+01:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/logos/dojo.jpg"></p>
+    <content type="html"><![CDATA[<p>{%img left /images/logos/dojo.jpg %}</p>
 
 <p>A couple of years ago, one of our technical architects at the Hut Group ran a few code dojos to give the team experience of TDD and Pair Programming. The team has grown massively in the meantime, so I thought it would be a good opportunity to try it again.</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: html | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/html/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-03-20T10:47:21+00:00</updated>
+  <updated>2014-04-11T13:04:12+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -18,9 +18,9 @@
     <link href="http://www.landofshattereddreams.com/blog/2012/05/15/more-bootstrap/"/>
     <updated>2012-05-15T10:45:47+01:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2012/05/15/more-bootstrap</id>
-    <content type="html"><![CDATA[<p><a href="http://typingincolor-website.s.greenqloud.com/typingincolor.com/wp-content/uploads/2012/05/before1.png"><img class="left" src="/images/bootstrap/before.png" width="150" height="150" title="before before" ></a></p>
+    <content type="html"><![CDATA[<p><a href="http://typingincolor-website.s.greenqloud.com/typingincolor.com/wp-content/uploads/2012/05/before1.png">{% img left /images/bootstrap/before.png 150 150 before before%}</a></p>
 
-<p><a href="http://typingincolor-website.s.greenqloud.com/typingincolor.com/wp-content/uploads/2012/05/after1.png"><img class="left" src="/images/bootstrap/after.png" width="150" height="150" title="after after" ></a>
+<p><a href="http://typingincolor-website.s.greenqloud.com/typingincolor.com/wp-content/uploads/2012/05/after1.png">{% img left /images/bootstrap/after.png 150 150 after after %}</a>
 As discussed earlier I have been playing with bootstrap for a few weeks and I’m beginning to get into in now. Below is an example of a screen I re-developed to replace a horrible accordion control with tabs and pagination from bootstrap.</p>
 
 <p>I think it looks much better now and it was pretty simple to implement.</p>

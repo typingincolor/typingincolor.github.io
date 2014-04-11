@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: tools | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/tools/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-03-20T10:47:21+00:00</updated>
+  <updated>2014-04-11T13:04:12+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -18,7 +18,7 @@
     <link href="http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app/"/>
     <updated>2011-03-17T00:13:53+00:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app</id>
-    <content type="html"><![CDATA[<p><a href="http://rubyonrails.org"><img class="left" src="/images/logos/rails.png"></a> 
+    <content type="html"><![CDATA[<p><a href="http://rubyonrails.org">{% img left /images/logos/rails.png %}</a> 
 I have worked in IT for the best part of 15 years, most of that in technical roles. I started as a Trainee Programmer in the IT department of a large bank, and have ended up as the Head of Development at at one of the UK’s fastest growing technology companies. When I started work I developed in C and a 4GL called  OpenROAD, and I was pretty good at them…</p>
 
 <p>I started using Java in around 1999, back when applets were still used. I quite liked it, and I’ve used it pretty much ever since. I last worked on a C project in 2000, I could probably remember how to compile a program if I had to, but I suspect I would just cause servers to core dump if I was allowed any where near them now.</p>
@@ -31,7 +31,7 @@ I have worked in IT for the best part of 15 years, most of that in technical rol
 
 <p>I looked at a few options to build the app. Groovy on Grails and the Play framework are basically java, and I really can’t be bothered with that; so in the end I went for Ruby on Rails.</p>
 
-<p><a href="http://www.ruby-lang.org/en/"><img class="left" src="/images/logos/ruby.gif"></a>
+<p><a href="http://www.ruby-lang.org/en/">{% img left /images/logos/ruby.gif %}</a>
 I quite like Ruby as  a language. It is weakly typed which makes things a lot easier and the syntax pretty easy to follow. Rails as development framework is ridiculously easy. I have written less than 100 lines code to build the app. The hardest part was the css so that it didn’t look like a dogs dinner. I’m not sure I am entirely in favour of how easy it is, there is a bit to much magic for my liking; things work when I think they shouldn’t and then I spend 10 minutes working out why it works. All-in-all though it has been a pretty enjoyable experience.</p>
 
 <p>There are a few things a really do like though:</p>

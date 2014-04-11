@@ -9,8 +9,8 @@
   <meta name="author" content="Andrew Braithwaite">
 
   
-  <meta name="description" content="I&#8217;ve not been able to blog for a while as a lot of things have been going on.
-In November I left Morrisons to take a Solutions Architect role &hellip;">
+  <meta name="description" content="One of my colleagues attend QCon London and say a presentation by Michael Nygard
+on Maneuverable Web Architecture. A few of us got together and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -87,6 +87,99 @@ In November I left Morrisons to take a Solutions Architect role &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/11/maneuverable-web-architecture/">Maneuverable Web Architecture</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-11T11:19:00+01:00" pubdate data-updated="true">Apr 11<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/04/11/maneuverable-web-architecture/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>One of my colleagues attend QCon London and say a presentation by <a href="http://www.michaelnygard.com/">Michael Nygard</a>
+on <a href="http://gotocon.com/berlin-2013/presentation/Maneuverable%20Web%20Architecture">Maneuverable Web Architecture</a>. A few of us got together and watched it and
+it got us thinking…</p>
+
+<p>Businesses need to be able to move quickly, and some of the established architectural
+patterns stop them doing this. The presentation contained lots of ideas but I am going
+to concentrate on one: sending an email to a customer.</p>
+
+<p>The traditional approach is for the application sending the email to write to a
+database saying who the email is to goto, when to send it and the data to be included
+in the email. A batch job wakes up, scans the database for emails to send, builds them
+and then sends them on.</p>
+
+<p>This approach works well, loads of people have done it, and it is pretty easy to
+implement. There are some problems though: changing things can be difficult; you have
+to make sure that you don’t break any of the queued emails whenever you make a change.
+The solution isn’t very flexible either, it is good for sending emails but if you want
+to do something else you will have to revisit your entire solution.</p>
+
+<p>Is there a better way? Michael proposed this approach. When I first saw it I thought
+it was a bit crazy, but I had a go at implementing it and it has a lot going for it…</p>
+
+<p>We first create a few components:</p>
+
+<ul>
+  <li><strong>at service</strong> - this service call as specified url at a given point in time a
+client will basically</li>
+  <li><strong>script engine</strong> - this service is passed a script and executes it</li>
+  <li><strong>script factory</strong> - this service builds scripts for the script engine to execute</li>
+</ul>
+
+<p>How does this let us send an email to a customer?</p>
+
+<ul>
+  <li>the client sending the email says to the script factory: “Give me an email sending script”</li>
+  <li>the script factory builds the script and passes a url to execute the script to the client</li>
+  <li>the client says to the at service: “Call this url now”</li>
+  <li>the at service calls the url, and the script engine executes the script</li>
+  <li>the script does everything required to send an email to the customer</li>
+</ul>
+
+<p>How is this better?
+* The at service just calls urls at a point in time, you can use it for anything
+* If the you add new functionality you can just deploy a new script engine and script factory
+on a different url. All the exisitng scripts will still work, any new scripts will go to the new
+versions. If you want to add email tracking, change the script factory to include
+it and then all new scripts will have email tracking. All the old scripts will still work.
+* All clients are doing is asking for a script and scheduling them. You
+can write scripts to do anything you can think of…</p>
+
+<p>I am glossing over some of the problems… The script engine is non-trivial, error
+handling seems complicated and it takes some explaining to developers.</p>
+
+<p>If your interested I had a go at implementing the approach, you can see the results on <a href="http://github.com/typingincolor/typhoon">github</a>.
+It is by no means production ready, but you can kind of see how it could work… </p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -759,50 +852,6 @@ Once we’d finished we moved on the hacking. Everybody split into teams and had
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/15/more-bootstrap/">More Bootstrap</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-15T10:45:47+01:00" pubdate data-updated="true">May 15<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/05/15/more-bootstrap/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://typingincolor-website.s.greenqloud.com/typingincolor.com/wp-content/uploads/2012/05/before1.png"><img class="left" src="/images/bootstrap/before.png" width="150" height="150" title="before before" /></a></p>
-
-<p><a href="http://typingincolor-website.s.greenqloud.com/typingincolor.com/wp-content/uploads/2012/05/after1.png"><img class="left" src="/images/bootstrap/after.png" width="150" height="150" title="after after" /></a>
-As discussed earlier I have been playing with bootstrap for a few weeks and I’m beginning to get into in now. Below is an example of a screen I re-developed to replace a horrible accordion control with tabs and pagination from bootstrap.</p>
-
-<p>I think it looks much better now and it was pretty simple to implement.</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -818,6 +867,10 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/11/maneuverable-web-architecture/">Maneuverable Web Architecture</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/17/adventures-in-oauth2/">Adventures in OAuth2</a>
       </li>
     
@@ -831,10 +884,6 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
     
       <li class="post">
         <a href="/blog/2013/04/28/welcome/">Welcome to the Land of Shattered Dreams</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/10/playing-with-rest-assured/">Playing with Rest-Assured</a>
       </li>
     
   </ul>
@@ -855,26 +904,26 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
 <section>
   <h1>Tags</h1>
   <ul class="tag-cloud">
-<li><a style="font-size: 90%" href="/tags/api/">API</a></li>
-<li><a style="font-size: 108%" href="/tags/agile-development/">Agile Development</a></li>
+<li><a style="font-size: 89%" href="/tags/api/">API</a></li>
+<li><a style="font-size: 119%" href="/tags/agile-development/">Agile Development</a></li>
+<li><a style="font-size: 89%" href="/tags/andrew-braithwaite/">Andrew Braithwaite</a></li>
 <li><a style="font-size: 60%" href="/tags/project-management/">Project Management</a></li>
-<li><a style="font-size: 90%" href="/tags/restful/">RESTful</a></li>
-<li><a style="font-size: 90%" href="/tags/alfred/">alfred</a></li>
-<li><a style="font-size: 90%" href="/tags/apigee/">apigee</a></li>
-<li><a style="font-size: 108%" href="/tags/applescript/">applescript</a></li>
-<li><a style="font-size: 108%" href="/tags/code/">code</a></li>
-<li><a style="font-size: 90%" href="/tags/css/">css</a></li>
-<li><a style="font-size: 90%" href="/tags/css3/">css3</a></li>
+<li><a style="font-size: 89%" href="/tags/restful/">RESTful</a></li>
+<li><a style="font-size: 89%" href="/tags/alfred/">alfred</a></li>
+<li><a style="font-size: 89%" href="/tags/apigee/">apigee</a></li>
+<li><a style="font-size: 106%" href="/tags/applescript/">applescript</a></li>
+<li><a style="font-size: 106%" href="/tags/code/">code</a></li>
+<li><a style="font-size: 89%" href="/tags/css/">css</a></li>
+<li><a style="font-size: 89%" href="/tags/css3/">css3</a></li>
 <li><a style="font-size: 165%" href="/tags/development/">development</a></li>
-<li><a style="font-size: 90%" href="/tags/facebook/">facebook</a></li>
-<li><a style="font-size: 90%" href="/tags/html/">html</a></li>
-<li><a style="font-size: 90%" href="/tags/java/">java</a></li>
-<li><a style="font-size: 130%" href="/tags/javascript/">javascript</a></li>
-<li><a style="font-size: 60%" href="/tags/joke/">joke</a></li>
-<li><a style="font-size: 108%" href="/tags/ruby/">ruby</a></li>
+<li><a style="font-size: 89%" href="/tags/facebook/">facebook</a></li>
+<li><a style="font-size: 89%" href="/tags/html/">html</a></li>
+<li><a style="font-size: 89%" href="/tags/java/">java</a></li>
+<li><a style="font-size: 128%" href="/tags/javascript/">javascript</a></li>
+<li><a style="font-size: 119%" href="/tags/ruby/">ruby</a></li>
 <li><a style="font-size: 60%" href="/tags/sinatra/">sinatra</a></li>
-<li><a style="font-size: 90%" href="/tags/things/">things</a></li>
-<li><a style="font-size: 121%" href="/tags/work/">work</a></li>
+<li><a style="font-size: 89%" href="/tags/things/">things</a></li>
+<li><a style="font-size: 119%" href="/tags/work/">work</a></li>
 
   </ul>
 </section>

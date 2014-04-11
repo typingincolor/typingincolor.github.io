@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Agile Development | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/agile-development/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-03-20T10:47:21+00:00</updated>
+  <updated>2014-04-11T13:04:12+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -14,11 +14,75 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Maneuverable Web Architecture]]></title>
+    <link href="http://www.landofshattereddreams.com/blog/2014/04/11/maneuverable-web-architecture/"/>
+    <updated>2014-04-11T11:19:00+01:00</updated>
+    <id>http://www.landofshattereddreams.com/blog/2014/04/11/maneuverable-web-architecture</id>
+    <content type="html"><![CDATA[<p>One of my colleagues attend QCon London and say a presentation by <a href="http://www.michaelnygard.com/">Michael Nygard</a>
+on <a href="http://gotocon.com/berlin-2013/presentation/Maneuverable%20Web%20Architecture">Maneuverable Web Architecture</a>. A few of us got together and watched it and
+it got us thinking…</p>
+
+<p>Businesses need to be able to move quickly, and some of the established architectural
+patterns stop them doing this. The presentation contained lots of ideas but I am going
+to concentrate on one: sending an email to a customer.</p>
+
+<p>The traditional approach is for the application sending the email to write to a
+database saying who the email is to goto, when to send it and the data to be included
+in the email. A batch job wakes up, scans the database for emails to send, builds them
+and then sends them on.</p>
+
+<p>This approach works well, loads of people have done it, and it is pretty easy to
+implement. There are some problems though: changing things can be difficult; you have
+to make sure that you don’t break any of the queued emails whenever you make a change.
+The solution isn’t very flexible either, it is good for sending emails but if you want
+to do something else you will have to revisit your entire solution.</p>
+
+<p>Is there a better way? Michael proposed this approach. When I first saw it I thought
+it was a bit crazy, but I had a go at implementing it and it has a lot going for it…</p>
+
+<p>We first create a few components:</p>
+
+<ul>
+  <li><strong>at service</strong> - this service call as specified url at a given point in time a
+client will basically</li>
+  <li><strong>script engine</strong> - this service is passed a script and executes it</li>
+  <li><strong>script factory</strong> - this service builds scripts for the script engine to execute</li>
+</ul>
+
+<p>How does this let us send an email to a customer?</p>
+
+<ul>
+  <li>the client sending the email says to the script factory: “Give me an email sending script”</li>
+  <li>the script factory builds the script and passes a url to execute the script to the client</li>
+  <li>the client says to the at service: “Call this url now”</li>
+  <li>the at service calls the url, and the script engine executes the script</li>
+  <li>the script does everything required to send an email to the customer</li>
+</ul>
+
+<p>How is this better?
+* The at service just calls urls at a point in time, you can use it for anything
+* If the you add new functionality you can just deploy a new script engine and script factory
+on a different url. All the exisitng scripts will still work, any new scripts will go to the new
+versions. If you want to add email tracking, change the script factory to include
+it and then all new scripts will have email tracking. All the old scripts will still work.
+* All clients are doing is asking for a script and scheduling them. You
+can write scripts to do anything you can think of…</p>
+
+<p>I am glossing over some of the problems… The script engine is non-trivial, error
+handling seems complicated and it takes some explaining to developers.</p>
+
+<p>If your interested I had a go at implementing the approach, you can see the results on <a href="http://github.com/typingincolor/typhoon">github</a>.
+It is by no means production ready, but you can kind of see how it could work… </p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[The Hut Group's first Code Dojo ]]></title>
     <link href="http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo/"/>
     <updated>2012-05-16T21:03:02+01:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/logos/dojo.jpg"></p>
+    <content type="html"><![CDATA[<p>{%img left /images/logos/dojo.jpg %}</p>
 
 <p>A couple of years ago, one of our technical architects at the Hut Group ran a few code dojos to give the team experience of TDD and Pair Programming. The team has grown massively in the meantime, so I thought it would be a good opportunity to try it again.</p>
 
@@ -90,7 +154,7 @@
     <link href="http://www.landofshattereddreams.com/blog/2010/06/08/the-art-of-agile-development-shore-warden/"/>
     <updated>2010-06-08T10:08:13+01:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2010/06/08/the-art-of-agile-development-shore-warden</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/the-art-of-agile-development-shore-warden/art-of-agile-development.jpg">
+    <content type="html"><![CDATA[<p>{%img left /images/the-art-of-agile-development-shore-warden/art-of-agile-development.jpg %}
 We’re slowly introducing Agile Development at work to help us deliver the systems the business needs to continue our impressive growth.</p>
 
 <p>We’re probably going to end up with a mixture of Scrum and XP, and although we’ve only just started we’re beginning to see the benefit in that we have a long term plan agreed with the business which we are now delivering to.</p>

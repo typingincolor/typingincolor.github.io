@@ -4,7 +4,7 @@
   <title><![CDATA[The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-14T13:43:14+01:00</updated>
+  <updated>2014-04-14T13:45:42+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -59,14 +59,17 @@ it was a bit crazy, but I had a go at implementing it and it has a lot going for
   <li>the script does everything required to send an email to the customer</li>
 </ul>
 
-<p>How is this better?
-* The at service just calls urls at a point in time, you can use it for anything
-* If the you add new functionality you can just deploy a new script engine and script factory
+<p>How is this better?</p>
+
+<ul>
+  <li>The at service just calls urls at a point in time, you can use it for anything</li>
+  <li>If the you add new functionality you can just deploy a new script engine and script factory
 on a different url. All the exisitng scripts will still work, any new scripts will go to the new
 versions. If you want to add email tracking, change the script factory to include
-it and then all new scripts will have email tracking. All the old scripts will still work.
-* All clients are doing is asking for a script and scheduling them. You
-can write scripts to do anything you can think of&#8230;</p>
+it and then all new scripts will have email tracking. All the old scripts will still work.</li>
+  <li>All clients are doing is asking for a script and scheduling them. You
+can write scripts to do anything you can think of&#8230;</li>
+</ul>
 
 <p>I am glossing over some of the problems&#8230; The script engine is non-trivial, error
 handling seems complicated and it takes some explaining to developers.</p>

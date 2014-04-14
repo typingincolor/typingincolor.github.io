@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: facebook | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/facebook/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-14T08:47:00+01:00</updated>
+  <updated>2014-04-14T13:43:14+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -30,7 +30,7 @@
   <li><a href="http://pusher.com">Pusher</a>, a way of doing real time magic</li>
 </ul>
 
-<p>{% img right /images/events/hackathon.jpg hackathon %}
+<p><img class="right" src="/images/events/hackathon.jpg" title="hackathon" >
 Once we’d finished we moved on the hacking. Everybody split into teams and had 7 hours to build something using the technologies discussed in the morning. Various prizes were on offer for the best hacks, they just had to use the Facebook platform.</p>
 
 <p>Ben and I were at a slight disadvantage in that there were only two of us in our team, and we wanted to build something that we could use a work. We had a few ideas over the previous couple of days and decided to build a store visit application. Basically, a customer goes to app’s Facebook page, chooses which store they visited and are asked to submit a review of the store. The review is posted to Open Graph and will appear on the customer’s Facebook timeline. When a customer visits the page of the store, they will see all the reviews for that store and be able to like, comment etc on them.</p>

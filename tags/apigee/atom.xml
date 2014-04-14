@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: apigee | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/apigee/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-14T08:47:00+01:00</updated>
+  <updated>2014-04-14T13:43:14+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -18,7 +18,7 @@
     <link href="http://www.landofshattereddreams.com/blog/2014/03/17/adventures-in-oauth2/"/>
     <updated>2014-03-17T09:01:00+00:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2014/03/17/adventures-in-oauth2</id>
-    <content type="html"><![CDATA[<p>{%img left /images/logos/oauth-2-sm.png %}
+    <content type="html"><![CDATA[<p><img class="left" src="/images/logos/oauth-2-sm.png">
 I’ve not been able to blog for a while as a lot of things have been going on.
 In November I left <a href="http://www.morrisons.co.uk">Morrisons</a> to take a Solutions Architect role at <a href="http://www.laterooms.com">Laterooms</a>
 and it has taken me a while to get settled in and to work out what’s going on.</p>

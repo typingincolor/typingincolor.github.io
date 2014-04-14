@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Work | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/blog/categories/work/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-14T08:47:00+01:00</updated>
+  <updated>2014-04-14T13:43:14+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -18,7 +18,7 @@
     <link href="http://www.landofshattereddreams.com/blog/2014/03/17/adventures-in-oauth2/"/>
     <updated>2014-03-17T09:01:00+00:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2014/03/17/adventures-in-oauth2</id>
-    <content type="html"><![CDATA[<p>{%img left /images/logos/oauth-2-sm.png %}
+    <content type="html"><![CDATA[<p><img class="left" src="/images/logos/oauth-2-sm.png">
 I’ve not been able to blog for a while as a lot of things have been going on.
 In November I left <a href="http://www.morrisons.co.uk">Morrisons</a> to take a Solutions Architect role at <a href="http://www.laterooms.com">Laterooms</a>
 and it has taken me a while to get settled in and to work out what’s going on.</p>
@@ -182,7 +182,7 @@ GET /shopping-cart
   <li><a href="http://pusher.com">Pusher</a>, a way of doing real time magic</li>
 </ul>
 
-<p>{% img right /images/events/hackathon.jpg hackathon %}
+<p><img class="right" src="/images/events/hackathon.jpg" title="hackathon" >
 Once we’d finished we moved on the hacking. Everybody split into teams and had 7 hours to build something using the technologies discussed in the morning. Various prizes were on offer for the best hacks, they just had to use the Facebook platform.</p>
 
 <p>Ben and I were at a slight disadvantage in that there were only two of us in our team, and we wanted to build something that we could use a work. We had a few ideas over the previous couple of days and decided to build a store visit application. Basically, a customer goes to app’s Facebook page, chooses which store they visited and are asked to submit a review of the store. The review is posted to Open Graph and will appear on the customer’s Facebook timeline. When a customer visits the page of the store, they will see all the reviews for that store and be able to like, comment etc on them.</p>
@@ -225,7 +225,7 @@ Once we’d finished we moved on the hacking. Everybody split into teams and had
     <link href="http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo/"/>
     <updated>2012-05-16T21:03:02+01:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2012/05/16/the-hut-groups-first-code-dojo</id>
-    <content type="html"><![CDATA[<p>{%img left /images/logos/dojo.jpg %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/logos/dojo.jpg"></p>
 
 <p>A couple of years ago, one of our technical architects at the Hut Group ran a few code dojos to give the team experience of TDD and Pair Programming. The team has grown massively in the meantime, so I thought it would be a good opportunity to try it again.</p>
 

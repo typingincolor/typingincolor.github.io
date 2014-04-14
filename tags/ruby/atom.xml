@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: ruby | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/ruby/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-11T13:04:12+01:00</updated>
+  <updated>2014-04-14T08:47:00+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -18,7 +18,8 @@
     <link href="http://www.landofshattereddreams.com/blog/2014/04/11/maneuverable-web-architecture/"/>
     <updated>2014-04-11T11:19:00+01:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2014/04/11/maneuverable-web-architecture</id>
-    <content type="html"><![CDATA[<p>One of my colleagues attend QCon London and say a presentation by <a href="http://www.michaelnygard.com/">Michael Nygard</a>
+    <content type="html"><![CDATA[<p>{%img left /images/typhoon.jpeg %}
+One of my colleagues attend QCon London and saw a presentation by <a href="http://www.michaelnygard.com/">Michael Nygard</a>
 on <a href="http://gotocon.com/berlin-2013/presentation/Maneuverable%20Web%20Architecture">Maneuverable Web Architecture</a>. A few of us got together and watched it and
 it got us thinking…</p>
 
@@ -72,7 +73,7 @@ can write scripts to do anything you can think of…</p>
 handling seems complicated and it takes some explaining to developers.</p>
 
 <p>If your interested I had a go at implementing the approach, you can see the results on <a href="http://github.com/typingincolor/typhoon">github</a>.
-It is by no means production ready, but you can kind of see how it could work… </p>
+It is by no means production ready, but you can kind of see how it could work…</p>
 
 ]]></content>
   </entry>

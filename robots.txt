@@ -1,4 +1,7 @@
 User-agent: *
-Disallow: 
+Disallow: /blog/page/
+Disallow: /tags/
+Disallow: /blog/categories/
 
-Sitemap: http://www.landofshattereddreams.com/sitemap.xml 
+
+Sitemap: http://www.landofshattereddreams.com/sitemap.xml

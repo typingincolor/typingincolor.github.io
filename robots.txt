@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /blog/page/
 Disallow: /tags/
 Disallow: /blog/categories/
+Disallow: /blog/archives/
 
 
 Sitemap: http://www.landofshattereddreams.com/sitemap.xml

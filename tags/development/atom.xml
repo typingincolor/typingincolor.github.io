@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: development | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/development/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-24T08:21:21+01:00</updated>
+  <updated>2014-04-25T16:37:35+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -94,7 +94,7 @@ It is by no means production ready, but you can kind of see how it could work…
 <p>I’ve tried to document everything using Word documents, but I couldn’t really get to a format that I liked. After talking to a few people I decided to try a couple of tools</p>
 
 <h2 id="apiary">Apiary</h2>
-<p><a href="http://apiary.io">Apiary</a> allows you to define an API using a simple, Markdown inspired DSL. </p>
+<p><a href="http://apiary.io">Apiary</a> allows you to define an API using a simple, Markdown inspired DSL.</p>
 
 <pre><code>HOST: http://shop.acme.com/
 --- Sample API v2 ---
@@ -157,7 +157,7 @@ GET /shopping-cart
                "numbers":[52,3,12,11,18,22]
          }]
     }
-} 
+}
 </code></p>
 
 <p>Then:</p>
@@ -215,9 +215,9 @@ Once we’d finished we moved on the hacking. Everybody split into teams and had
 
 <p>Open Graph allows you to specify an action and an object, and do the action to the object. It will put the fact you’ve done this on you Facebook timeline for all your friends to see. On the AutoTrader website for example, you can “want” a car. The demo app from Facebook shows you how to “cook” a recipe. The possibilities are endless.</p>
 
-<p>I found the whole thing really interesting. I got to write some javascript which I’ve not really done much of, and figuring out how to stop a user doing the same action twice was quite challenging. </p>
+<p>I found the whole thing really interesting. I got to write some javascript which I’ve not really done much of, and figuring out how to stop a user doing the same action twice was quite challenging.</p>
 
-<p>Testing my app was a bit of a faff, as I was running on a corporate network and you need to allow Facebook access to your website. I managed to get around it by setting up a reverse ssh tunnel to an Amazon EC2 instance and forwarding the web requests from there to my application. It took me a while to get working, but it is actually dead simple once you know what you are doing. </p>
+<p>Testing my app was a bit of a faff, as I was running on a corporate network and you need to allow Facebook access to your website. I managed to get around it by setting up a reverse ssh tunnel to an Amazon EC2 instance and forwarding the web requests from there to my application. It took me a while to get working, but it is actually dead simple once you know what you are doing.</p>
 
 <p>The Facebook documentation is quite good, and the tutorial is really easy to follow. I got two relatively complicated apps going in about three days and I’m not great a javascript…</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: coffeescript | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/coffeescript/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-24T08:21:21+01:00</updated>
+  <updated>2014-04-25T16:37:35+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -24,7 +24,7 @@
 
 <p>In the end I chose <a href="http://www.sinatrarb.com/">Sinatra</a>, a DSL for quickly creating web applications in Ruby with minimal effort. It is stupidly easy to create a web application! For example:</p>
 
-<p>``` ruby <br />
+<p>``` ruby
 require ‘sinatra’</p>
 
 <p>get ‘/hi’ do
@@ -41,7 +41,7 @@ require ‘sinatra’</p>
 
 <p>If you want to see the code, you can clone it using git </p>
 
-<p><code>  
+<p><code>
     git clone https://bitbucket.org/typingincolor/ajax-prototype.git
 </code></p>
 ]]></content>

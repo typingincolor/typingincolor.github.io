@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Random | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/blog/categories/random/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-24T08:21:21+01:00</updated>
+  <updated>2014-04-25T16:37:35+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -20,7 +20,7 @@
     <id>http://www.landofshattereddreams.com/blog/2011/12/15/create-things-tasks-from-within-outlook</id>
     <content type="html"><![CDATA[<p>I use <a href="http://www.red-sweater.com/fastscripts/">FastScripts</a> to run this, and it creates a Things task for each message you’ve selected in Outlook.</p>
 
-<p>``` applescript  <br />
+<p>``` applescript
     tell application “Microsoft Outlook”
     	using terms from application “Microsoft Outlook”
     		– get the currently selected message or messages
@@ -31,11 +31,11 @@
 			display dialog "Please select a message first and then run this script." with icon 1
 			return
 		end if
-		
+
 		repeat with theMessage in selectedMessages
 			set theSubject to subject of theMessage
 			set theContent to plain text content of theMessage
-			
+
 			tell application "Things"
 				set newToDo to make new to do with properties {name:theSubject}
 				set tag names of newToDo to "email"
@@ -55,7 +55,7 @@ end tell ```
     <id>http://www.landofshattereddreams.com/blog/2011/12/15/alfred-things-plugin</id>
     <content type="html"><![CDATA[<p>My second applescript for alfred. This time it creates a things task.</p>
 
-<p><code>applescript   
+<p><code>applescript
 on alfred_script(q)
 	set theSubject to q
 	tell application "Things"
@@ -72,21 +72,21 @@ end alfred_script
     <link href="http://www.landofshattereddreams.com/blog/2011/12/13/alfred-ssh-plugin/"/>
     <updated>2011-12-13T00:29:41+00:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2011/12/13/alfred-ssh-plugin</id>
-    <content type="html"><![CDATA[<p>I use Alfred (<a href="http://www.alfredapp.com/">http://www.alfredapp.com/</a>) to speed things up on my mac and it is a brilliant bit of software. I pay for the powerpack and have written a little bit of applescript to allow me to ssh to a server from the launcher. </p>
+    <content type="html"><![CDATA[<p>I use Alfred (<a href="http://www.alfredapp.com/">http://www.alfredapp.com/</a>) to speed things up on my mac and it is a brilliant bit of software. I pay for the powerpack and have written a little bit of applescript to allow me to ssh to a server from the launcher.</p>
 
 <p>I have it set up to so that “ssh server username” will connect to server as username. If you don’t put it a username it will default to “default”.</p>
 
-<p>``` applescript  <br />
+<p>``` applescript
     on alfred_script(q)
     	set tmp to splitString(item 1 of q, “ “)</p>
 
 <pre><code>	set server to item 1 of tmp
-	
+
 	if length of tmp is 2 then set login to item 2 of tmp
 	if length of tmp is 1 then set login to "default"
-	
+
 	set command to "ssh " &amp; server &amp; " -l " &amp; login
-	
+
 	tell application "Terminal"
 		do script command
 	end tell
@@ -104,31 +104,31 @@ end splitString ```
 
 <p>Phil wrote a version that can handle ports as well. I’ve changed it slightly as something appears to have changed within Alfred which was causing it to ignore the username passed in.</p>
 
-<p>``` applescript  <br />
+<p>``` applescript
     on alfred_script(q)
     	set tmp to splitString(item 1 of q, “ “)</p>
 
 <pre><code>	set server to item 1 of tmp
-	
+
 	(* Split at colon delimiter *)
 	set server to splitString(server, ":")
-	
+
 	(* Does it contain a port? If not just roll with it. *)
 	if length of server is 2 then
 		set serverport to item 2 of server
 		set serverip to item 1 of server
 		set server to serverip &amp; " -p " &amp; serverport
 	end if
-	
+
 	if length of tmp is 2 then set login to item 2 of tmp
 	if length of tmp is 1 then set login to "default"
-	
+
 	set command to "ssh " &amp; server &amp; " -l " &amp; login
-	
+
 	tell application "Terminal"
 		do script command
 	end tell
-end alfred_script ```    
+end alfred_script ```
 </code></pre>
 ]]></content>
   </entry>
@@ -151,7 +151,6 @@ end alfred_script ```
 <p>The tourist looked around for a little longer and saw a third monkey in a cage of its own. The price tag around its neck read $50,000.The tourist gasped to the shopkeeper, “That one costs more than all the others put together! What on earth does it do?”</p>
 
 <p>The shopkeeper replied, “Well, I haven’t actually seen it do anything, but it says it’s a project manager”.</p>
-
 ]]></content>
   </entry>
   

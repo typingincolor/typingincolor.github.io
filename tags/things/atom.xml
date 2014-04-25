@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: things | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/things/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-24T08:21:21+01:00</updated>
+  <updated>2014-04-25T16:37:35+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -20,7 +20,7 @@
     <id>http://www.landofshattereddreams.com/blog/2011/12/15/create-things-tasks-from-within-outlook</id>
     <content type="html"><![CDATA[<p>I use <a href="http://www.red-sweater.com/fastscripts/">FastScripts</a> to run this, and it creates a Things task for each message you’ve selected in Outlook.</p>
 
-<p>``` applescript  <br />
+<p>``` applescript
     tell application “Microsoft Outlook”
     	using terms from application “Microsoft Outlook”
     		– get the currently selected message or messages
@@ -31,11 +31,11 @@
 			display dialog "Please select a message first and then run this script." with icon 1
 			return
 		end if
-		
+
 		repeat with theMessage in selectedMessages
 			set theSubject to subject of theMessage
 			set theContent to plain text content of theMessage
-			
+
 			tell application "Things"
 				set newToDo to make new to do with properties {name:theSubject}
 				set tag names of newToDo to "email"
@@ -55,7 +55,7 @@ end tell ```
     <id>http://www.landofshattereddreams.com/blog/2011/12/15/alfred-things-plugin</id>
     <content type="html"><![CDATA[<p>My second applescript for alfred. This time it creates a things task.</p>
 
-<p><code>applescript   
+<p><code>applescript
 on alfred_script(q)
 	set theSubject to q
 	tell application "Things"

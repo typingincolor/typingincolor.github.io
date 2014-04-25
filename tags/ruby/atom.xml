@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: ruby | The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/tags/ruby/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-24T08:21:21+01:00</updated>
+  <updated>2014-04-25T16:37:35+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -91,7 +91,7 @@ It is by no means production ready, but you can kind of see how it could work…
 
 <p>In the end I chose <a href="http://www.sinatrarb.com/">Sinatra</a>, a DSL for quickly creating web applications in Ruby with minimal effort. It is stupidly easy to create a web application! For example:</p>
 
-<p>``` ruby <br />
+<p>``` ruby
 require ‘sinatra’</p>
 
 <p>get ‘/hi’ do
@@ -108,7 +108,7 @@ require ‘sinatra’</p>
 
 <p>If you want to see the code, you can clone it using git </p>
 
-<p><code>  
+<p><code>
     git clone https://bitbucket.org/typingincolor/ajax-prototype.git
 </code></p>
 ]]></content>
@@ -141,7 +141,7 @@ require ‘sinatra’</p>
     <link href="http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app/"/>
     <updated>2011-03-17T00:13:53+00:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app</id>
-    <content type="html"><![CDATA[<p><a href="http://rubyonrails.org"><img class="left" src="/images/logos/rails.png"></a> 
+    <content type="html"><![CDATA[<p><a href="http://rubyonrails.org"><img class="left" src="/images/logos/rails.png"></a>
 I have worked in IT for the best part of 15 years, most of that in technical roles. I started as a Trainee Programmer in the IT department of a large bank, and have ended up as the Head of Development at at one of the UK’s fastest growing technology companies. When I started work I developed in C and a 4GL called  OpenROAD, and I was pretty good at them…</p>
 
 <p>I started using Java in around 1999, back when applets were still used. I quite liked it, and I’ve used it pretty much ever since. I last worked on a C project in 2000, I could probably remember how to compile a program if I had to, but I suspect I would just cause servers to core dump if I was allowed any where near them now.</p>
@@ -174,7 +174,6 @@ I quite like Ruby as  a language. It is weakly typed which makes things a lot e
 <p>Maybe it is time for me to stop going to meetings, planning projects and get with the program and do some proper development. Skillz version 1 (great name eh?) will be unleashed on the development team next week, and I’m already planning the features for version 2.</p>
 
 <p>The one fly in the ointment is that Rails development on Windoze truly sucks. Git doesn’t work properly, the tools suck, windoze sucks and the whole experience is just rubbish. If you’re going to do Rails buy a mac.</p>
-
 ]]></content>
   </entry>
   

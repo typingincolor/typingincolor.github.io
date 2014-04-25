@@ -114,7 +114,7 @@
   </header>
 
 
-<div class="entry-content"><p>I use Alfred (<a href="http://www.alfredapp.com/">http://www.alfredapp.com/</a>) to speed things up on my mac and it is a brilliant bit of software. I pay for the powerpack and have written a little bit of applescript to allow me to ssh to a server from the launcher. </p>
+<div class="entry-content"><p>I use Alfred (<a href="http://www.alfredapp.com/">http://www.alfredapp.com/</a>) to speed things up on my mac and it is a brilliant bit of software. I pay for the powerpack and have written a little bit of applescript to allow me to ssh to a server from the launcher.</p>
 
 <p>I have it set up to so that “ssh server username” will connect to server as username. If you don’t put it a username it will default to “default”.</p>
 
@@ -143,14 +143,14 @@
 <span class="line-number">23</span>
 </pre></td><td class="code"><pre><code class="applescript"><span class="line"><span class="k">on</span> <span class="nv">alfred_script</span><span class="p">(</span><span class="nv">q</span><span class="p">)</span>
 </span><span class="line">	<span class="k">set</span> <span class="nv">tmp</span> <span class="k">to</span> <span class="nv">splitString</span><span class="p">(</span><span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">q</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">set</span> <span class="nv">server</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">tmp</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">if</span> <span class="nv">length</span> <span class="k">of</span> <span class="nv">tmp</span> <span class="ow">is</span> <span class="mi">2</span> <span class="k">then</span> <span class="k">set</span> <span class="nv">login</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">2</span> <span class="k">of</span> <span class="nv">tmp</span>
 </span><span class="line">	<span class="k">if</span> <span class="nv">length</span> <span class="k">of</span> <span class="nv">tmp</span> <span class="ow">is</span> <span class="mi">1</span> <span class="k">then</span> <span class="k">set</span> <span class="nv">login</span> <span class="k">to</span> <span class="s2">&quot;default&quot;</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">set</span> <span class="nv">command</span> <span class="k">to</span> <span class="s2">&quot;ssh &quot;</span> <span class="o">&amp;</span> <span class="nv">server</span> <span class="o">&amp;</span> <span class="s2">&quot; -l &quot;</span> <span class="o">&amp;</span> <span class="nv">login</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Terminal&quot;</span>
 </span><span class="line">		<span class="nv">do</span> <span class="nv">script</span> <span class="nv">command</span>
 </span><span class="line">	<span class="k">end</span> <span class="k">tell</span>
@@ -194,24 +194,24 @@
 <span class="line-number">24</span>
 </pre></td><td class="code"><pre><code class="applescript"><span class="line"><span class="k">on</span> <span class="nv">alfred_script</span><span class="p">(</span><span class="nv">q</span><span class="p">)</span>
 </span><span class="line">	<span class="k">set</span> <span class="nv">tmp</span> <span class="k">to</span> <span class="nv">splitString</span><span class="p">(</span><span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">q</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">set</span> <span class="nv">server</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">tmp</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="cm">(* Split at colon delimiter *)</span>
 </span><span class="line">	<span class="k">set</span> <span class="nv">server</span> <span class="k">to</span> <span class="nv">splitString</span><span class="p">(</span><span class="nv">server</span><span class="p">,</span> <span class="s2">&quot;:&quot;</span><span class="p">)</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="cm">(* Does it contain a port? If not just roll with it. *)</span>
 </span><span class="line">	<span class="k">if</span> <span class="nv">length</span> <span class="k">of</span> <span class="nv">server</span> <span class="ow">is</span> <span class="mi">2</span> <span class="k">then</span>
 </span><span class="line">		<span class="k">set</span> <span class="nv">serverport</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">2</span> <span class="k">of</span> <span class="nv">server</span>
 </span><span class="line">		<span class="k">set</span> <span class="nv">serverip</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">server</span>
 </span><span class="line">		<span class="k">set</span> <span class="nv">server</span> <span class="k">to</span> <span class="nv">serverip</span> <span class="o">&amp;</span> <span class="s2">&quot; -p &quot;</span> <span class="o">&amp;</span> <span class="nv">serverport</span>
 </span><span class="line">	<span class="k">end</span> <span class="k">if</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">if</span> <span class="nv">length</span> <span class="k">of</span> <span class="nv">tmp</span> <span class="ow">is</span> <span class="mi">2</span> <span class="k">then</span> <span class="k">set</span> <span class="nv">login</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">2</span> <span class="k">of</span> <span class="nv">tmp</span>
 </span><span class="line">	<span class="k">if</span> <span class="nv">length</span> <span class="k">of</span> <span class="nv">tmp</span> <span class="ow">is</span> <span class="mi">1</span> <span class="k">then</span> <span class="k">set</span> <span class="nv">login</span> <span class="k">to</span> <span class="s2">&quot;default&quot;</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">set</span> <span class="nv">command</span> <span class="k">to</span> <span class="s2">&quot;ssh &quot;</span> <span class="o">&amp;</span> <span class="nv">server</span> <span class="o">&amp;</span> <span class="s2">&quot; -l &quot;</span> <span class="o">&amp;</span> <span class="nv">login</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Terminal&quot;</span>
 </span><span class="line">		<span class="nv">do</span> <span class="nv">script</span> <span class="nv">command</span>
 </span><span class="line">	<span class="k">end</span> <span class="k">tell</span>

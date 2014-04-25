@@ -4,7 +4,7 @@
   <title><![CDATA[The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-24T08:21:21+01:00</updated>
+  <updated>2014-04-25T16:37:35+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -199,7 +199,7 @@ quite different), and Mulesoft&#8217;s approach also work&#8217;s well.</p>
 <p>I’ve tried to document everything using Word documents, but I couldn’t really get to a format that I liked. After talking to a few people I decided to try a couple of tools</p>
 
 <h2 id="apiary">Apiary</h2>
-<p><a href="http://apiary.io">Apiary</a> allows you to define an API using a simple, Markdown inspired DSL. </p>
+<p><a href="http://apiary.io">Apiary</a> allows you to define an API using a simple, Markdown inspired DSL.</p>
 
 <pre><code>HOST: http://shop.acme.com/
 --- Sample API v2 ---
@@ -271,21 +271,21 @@ GET /shopping-cart
     <updated>2013-04-28T20:33:00+01:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2013/04/28/welcome</id>
     <content type="html"><![CDATA[<p>I’ve been blogging at as <a href="http://typingincolor.com">typingincolor</a> for about three years. It started as
-an exercise to learn a bit about wordpress, and was a place where I reviewed 
-whatever DVDs and books I’d been looking at. </p>
+an exercise to learn a bit about wordpress, and was a place where I reviewed
+whatever DVDs and books I’d been looking at.</p>
 
-<p>As time progressed, I began to add some stuff about work and technology. 
+<p>As time progressed, I began to add some stuff about work and technology.
 In particular I talked a bit about the journey the company I was working for
 was taking into the world of agile development. I also put in some stuff about
 technology that I was currently looking at.</p>
 
 <p>It worked (and works) pretty well, but I’ve decided to try something new. I’ve
-chosen to use <a href="http://octopress.org">octopress</a> as it will let me use some technologies I’m 
+chosen to use <a href="http://octopress.org">octopress</a> as it will let me use some technologies I’m
 interested in. I particularly like that the styling is done using <a href="http://sass-lang.com/">sass</a> and
-the content written in <a href="http://daringfireball.net/projects/markdown/">markdown</a>. That fact that it’s built on ruby is a 
+the content written in <a href="http://daringfireball.net/projects/markdown/">markdown</a>. That fact that it’s built on ruby is a
 happy coincidence.</p>
 
-<p>The other thing I do really like is that it uses <a href="http://git-scm.com/">git</a> to publish the content. 
+<p>The other thing I do really like is that it uses <a href="http://git-scm.com/">git</a> to publish the content.
 I can run a local copy of any changes I make and preview them locally, I can then
 push the content up to <a href="https://www.heroku.com/">heroku</a> where they are visible to the world.</p>
 
@@ -392,9 +392,9 @@ Once we’d finished we moved on the hacking. Everybody split into teams and had
 
 <p>Open Graph allows you to specify an action and an object, and do the action to the object. It will put the fact you’ve done this on you Facebook timeline for all your friends to see. On the AutoTrader website for example, you can “want” a car. The demo app from Facebook shows you how to “cook” a recipe. The possibilities are endless.</p>
 
-<p>I found the whole thing really interesting. I got to write some javascript which I’ve not really done much of, and figuring out how to stop a user doing the same action twice was quite challenging. </p>
+<p>I found the whole thing really interesting. I got to write some javascript which I’ve not really done much of, and figuring out how to stop a user doing the same action twice was quite challenging.</p>
 
-<p>Testing my app was a bit of a faff, as I was running on a corporate network and you need to allow Facebook access to your website. I managed to get around it by setting up a reverse ssh tunnel to an Amazon EC2 instance and forwarding the web requests from there to my application. It took me a while to get working, but it is actually dead simple once you know what you are doing. </p>
+<p>Testing my app was a bit of a faff, as I was running on a corporate network and you need to allow Facebook access to your website. I managed to get around it by setting up a reverse ssh tunnel to an Amazon EC2 instance and forwarding the web requests from there to my application. It took me a while to get working, but it is actually dead simple once you know what you are doing.</p>
 
 <p>The Facebook documentation is quite good, and the tutorial is really easy to follow. I got two relatively complicated apps going in about three days and I’m not great a javascript…</p>
 
@@ -556,17 +556,17 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
 </span><span class="line">	<span class="k">using terms from</span> <span class="nb">application</span> <span class="s2">&quot;Microsoft Outlook&quot;</span>
 </span><span class="line">		<span class="c">-- get the currently selected message or messages</span>
 </span><span class="line">		<span class="k">set</span> <span class="nv">selectedMessages</span> <span class="k">to</span> <span class="nv">current</span> <span class="nv">messages</span>
-</span><span class="line">		
+</span><span class="line">
 </span><span class="line">		<span class="c">-- if there are no messages selected, warn the user and then quit</span>
 </span><span class="line">		<span class="k">if</span> <span class="nv">selectedMessages</span> <span class="ow">is</span> <span class="p">{}</span> <span class="k">then</span>
 </span><span class="line">			<span class="nb">display dialog</span> <span class="s2">&quot;Please select a message first and then run this script.&quot;</span> <span class="nv">with</span> <span class="nv">icon</span> <span class="mi">1</span>
 </span><span class="line">			<span class="no">return</span>
 </span><span class="line">		<span class="k">end</span> <span class="k">if</span>
-</span><span class="line">		
+</span><span class="line">
 </span><span class="line">		<span class="k">repeat</span> <span class="nv">with</span> <span class="nv">theMessage</span> <span class="k">in</span> <span class="nv">selectedMessages</span>
 </span><span class="line">			<span class="k">set</span> <span class="nv">theSubject</span> <span class="k">to</span> <span class="nv">subject</span> <span class="k">of</span> <span class="nv">theMessage</span>
 </span><span class="line">			<span class="k">set</span> <span class="nv">theContent</span> <span class="k">to</span> <span class="nv">plain</span> <span class="nb">text</span> <span class="na">content</span> <span class="k">of</span> <span class="nv">theMessage</span>
-</span><span class="line">			
+</span><span class="line">
 </span><span class="line">			<span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Things&quot;</span>
 </span><span class="line">				<span class="k">set</span> <span class="nv">newToDo</span> <span class="k">to</span> <span class="nb">make</span> <span class="nb">new</span> <span class="k">to</span> <span class="nv">do</span> <span class="nv">with</span> <span class="na">properties</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span><span class="nv">theSubject</span><span class="p">}</span>
 </span><span class="line">				<span class="k">set</span> <span class="na">tag</span> <span class="nv">names</span> <span class="k">of</span> <span class="nv">newToDo</span> <span class="k">to</span> <span class="s2">&quot;email&quot;</span>
@@ -609,7 +609,7 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
     <link href="http://www.landofshattereddreams.com/blog/2011/12/13/alfred-ssh-plugin/"/>
     <updated>2011-12-13T00:29:41+00:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2011/12/13/alfred-ssh-plugin</id>
-    <content type="html"><![CDATA[<p>I use Alfred (<a href="http://www.alfredapp.com/">http://www.alfredapp.com/</a>) to speed things up on my mac and it is a brilliant bit of software. I pay for the powerpack and have written a little bit of applescript to allow me to ssh to a server from the launcher. </p>
+    <content type="html"><![CDATA[<p>I use Alfred (<a href="http://www.alfredapp.com/">http://www.alfredapp.com/</a>) to speed things up on my mac and it is a brilliant bit of software. I pay for the powerpack and have written a little bit of applescript to allow me to ssh to a server from the launcher.</p>
 
 <p>I have it set up to so that “ssh server username” will connect to server as username. If you don’t put it a username it will default to “default”.</p>
 
@@ -638,14 +638,14 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
 <span class="line-number">23</span>
 </pre></td><td class="code"><pre><code class="applescript"><span class="line"><span class="k">on</span> <span class="nv">alfred_script</span><span class="p">(</span><span class="nv">q</span><span class="p">)</span>
 </span><span class="line">	<span class="k">set</span> <span class="nv">tmp</span> <span class="k">to</span> <span class="nv">splitString</span><span class="p">(</span><span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">q</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">set</span> <span class="nv">server</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">tmp</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">if</span> <span class="nv">length</span> <span class="k">of</span> <span class="nv">tmp</span> <span class="ow">is</span> <span class="mi">2</span> <span class="k">then</span> <span class="k">set</span> <span class="nv">login</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">2</span> <span class="k">of</span> <span class="nv">tmp</span>
 </span><span class="line">	<span class="k">if</span> <span class="nv">length</span> <span class="k">of</span> <span class="nv">tmp</span> <span class="ow">is</span> <span class="mi">1</span> <span class="k">then</span> <span class="k">set</span> <span class="nv">login</span> <span class="k">to</span> <span class="s2">&quot;default&quot;</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">set</span> <span class="nv">command</span> <span class="k">to</span> <span class="s2">&quot;ssh &quot;</span> <span class="o">&amp;</span> <span class="nv">server</span> <span class="o">&amp;</span> <span class="s2">&quot; -l &quot;</span> <span class="o">&amp;</span> <span class="nv">login</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Terminal&quot;</span>
 </span><span class="line">		<span class="nv">do</span> <span class="nv">script</span> <span class="nv">command</span>
 </span><span class="line">	<span class="k">end</span> <span class="k">tell</span>
@@ -689,24 +689,24 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
 <span class="line-number">24</span>
 </pre></td><td class="code"><pre><code class="applescript"><span class="line"><span class="k">on</span> <span class="nv">alfred_script</span><span class="p">(</span><span class="nv">q</span><span class="p">)</span>
 </span><span class="line">	<span class="k">set</span> <span class="nv">tmp</span> <span class="k">to</span> <span class="nv">splitString</span><span class="p">(</span><span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">q</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">set</span> <span class="nv">server</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">tmp</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="cm">(* Split at colon delimiter *)</span>
 </span><span class="line">	<span class="k">set</span> <span class="nv">server</span> <span class="k">to</span> <span class="nv">splitString</span><span class="p">(</span><span class="nv">server</span><span class="p">,</span> <span class="s2">&quot;:&quot;</span><span class="p">)</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="cm">(* Does it contain a port? If not just roll with it. *)</span>
 </span><span class="line">	<span class="k">if</span> <span class="nv">length</span> <span class="k">of</span> <span class="nv">server</span> <span class="ow">is</span> <span class="mi">2</span> <span class="k">then</span>
 </span><span class="line">		<span class="k">set</span> <span class="nv">serverport</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">2</span> <span class="k">of</span> <span class="nv">server</span>
 </span><span class="line">		<span class="k">set</span> <span class="nv">serverip</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">server</span>
 </span><span class="line">		<span class="k">set</span> <span class="nv">server</span> <span class="k">to</span> <span class="nv">serverip</span> <span class="o">&amp;</span> <span class="s2">&quot; -p &quot;</span> <span class="o">&amp;</span> <span class="nv">serverport</span>
 </span><span class="line">	<span class="k">end</span> <span class="k">if</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">if</span> <span class="nv">length</span> <span class="k">of</span> <span class="nv">tmp</span> <span class="ow">is</span> <span class="mi">2</span> <span class="k">then</span> <span class="k">set</span> <span class="nv">login</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">2</span> <span class="k">of</span> <span class="nv">tmp</span>
 </span><span class="line">	<span class="k">if</span> <span class="nv">length</span> <span class="k">of</span> <span class="nv">tmp</span> <span class="ow">is</span> <span class="mi">1</span> <span class="k">then</span> <span class="k">set</span> <span class="nv">login</span> <span class="k">to</span> <span class="s2">&quot;default&quot;</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">set</span> <span class="nv">command</span> <span class="k">to</span> <span class="s2">&quot;ssh &quot;</span> <span class="o">&amp;</span> <span class="nv">server</span> <span class="o">&amp;</span> <span class="s2">&quot; -l &quot;</span> <span class="o">&amp;</span> <span class="nv">login</span>
-</span><span class="line">	
+</span><span class="line">
 </span><span class="line">	<span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Terminal&quot;</span>
 </span><span class="line">		<span class="nv">do</span> <span class="nv">script</span> <span class="nv">command</span>
 </span><span class="line">	<span class="k">end</span> <span class="k">tell</span>
@@ -742,7 +742,6 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
 <p>The tourist looked around for a little longer and saw a third monkey in a cage of its own. The price tag around its neck read $50,000.The tourist gasped to the shopkeeper, “That one costs more than all the others put together! What on earth does it do?”</p>
 
 <p>The shopkeeper replied, “Well, I haven’t actually seen it do anything, but it says it’s a project manager”.</p>
-
 ]]></content>
   </entry>
   
@@ -792,7 +791,7 @@ As discussed earlier I have been playing with bootstrap for a few weeks and I’
     <link href="http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app/"/>
     <updated>2011-03-17T00:13:53+00:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2011/03/17/my-first-rails-app</id>
-    <content type="html"><![CDATA[<p><a href="http://rubyonrails.org"><img class="left" src="http://www.landofshattereddreams.com/images/logos/rails.png" /></a> 
+    <content type="html"><![CDATA[<p><a href="http://rubyonrails.org"><img class="left" src="http://www.landofshattereddreams.com/images/logos/rails.png" /></a>
 I have worked in IT for the best part of 15 years, most of that in technical roles. I started as a Trainee Programmer in the IT department of a large bank, and have ended up as the Head of Development at at one of the UK’s fastest growing technology companies. When I started work I developed in C and a 4GL called  OpenROAD, and I was pretty good at them…</p>
 
 <p>I started using Java in around 1999, back when applets were still used. I quite liked it, and I’ve used it pretty much ever since. I last worked on a C project in 2000, I could probably remember how to compile a program if I had to, but I suspect I would just cause servers to core dump if I was allowed any where near them now.</p>
@@ -825,7 +824,6 @@ I quite like Ruby as  a language. It is weakly typed which makes things a lot e
 <p>Maybe it is time for me to stop going to meetings, planning projects and get with the program and do some proper development. Skillz version 1 (great name eh?) will be unleashed on the development team next week, and I’m already planning the features for version 2.</p>
 
 <p>The one fly in the ointment is that Rails development on Windoze truly sucks. Git doesn’t work properly, the tools suck, windoze sucks and the whole experience is just rubbish. If you’re going to do Rails buy a mac.</p>
-
 ]]></content>
   </entry>
   

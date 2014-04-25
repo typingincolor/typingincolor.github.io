@@ -160,17 +160,17 @@
 </span><span class="line">	<span class="k">using terms from</span> <span class="nb">application</span> <span class="s2">&quot;Microsoft Outlook&quot;</span>
 </span><span class="line">		<span class="c">-- get the currently selected message or messages</span>
 </span><span class="line">		<span class="k">set</span> <span class="nv">selectedMessages</span> <span class="k">to</span> <span class="nv">current</span> <span class="nv">messages</span>
-</span><span class="line">		
+</span><span class="line">
 </span><span class="line">		<span class="c">-- if there are no messages selected, warn the user and then quit</span>
 </span><span class="line">		<span class="k">if</span> <span class="nv">selectedMessages</span> <span class="ow">is</span> <span class="p">{}</span> <span class="k">then</span>
 </span><span class="line">			<span class="nb">display dialog</span> <span class="s2">&quot;Please select a message first and then run this script.&quot;</span> <span class="nv">with</span> <span class="nv">icon</span> <span class="mi">1</span>
 </span><span class="line">			<span class="no">return</span>
 </span><span class="line">		<span class="k">end</span> <span class="k">if</span>
-</span><span class="line">		
+</span><span class="line">
 </span><span class="line">		<span class="k">repeat</span> <span class="nv">with</span> <span class="nv">theMessage</span> <span class="k">in</span> <span class="nv">selectedMessages</span>
 </span><span class="line">			<span class="k">set</span> <span class="nv">theSubject</span> <span class="k">to</span> <span class="nv">subject</span> <span class="k">of</span> <span class="nv">theMessage</span>
 </span><span class="line">			<span class="k">set</span> <span class="nv">theContent</span> <span class="k">to</span> <span class="nv">plain</span> <span class="nb">text</span> <span class="na">content</span> <span class="k">of</span> <span class="nv">theMessage</span>
-</span><span class="line">			
+</span><span class="line">
 </span><span class="line">			<span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Things&quot;</span>
 </span><span class="line">				<span class="k">set</span> <span class="nv">newToDo</span> <span class="k">to</span> <span class="nb">make</span> <span class="nb">new</span> <span class="k">to</span> <span class="nv">do</span> <span class="nv">with</span> <span class="na">properties</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span><span class="nv">theSubject</span><span class="p">}</span>
 </span><span class="line">				<span class="k">set</span> <span class="na">tag</span> <span class="nv">names</span> <span class="k">of</span> <span class="nv">newToDo</span> <span class="k">to</span> <span class="s2">&quot;email&quot;</span>

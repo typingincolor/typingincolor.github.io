@@ -4,7 +4,7 @@
   <title><![CDATA[The Land of Shattered Dreams]]></title>
   <link href="http://www.landofshattereddreams.com/atom.xml" rel="self"/>
   <link href="http://www.landofshattereddreams.com/"/>
-  <updated>2014-04-28T09:07:57+01:00</updated>
+  <updated>2014-05-16T10:54:55+01:00</updated>
   <id>http://www.landofshattereddreams.com/</id>
   <author>
     <name><![CDATA[Andrew Braithwaite]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<p><img class="left" src="http://www.landofshattereddreams.com/images/typhoon.jpeg" />
 One of my colleagues attend QCon London and saw a presentation by <a href="http://www.michaelnygard.com/">Michael Nygard</a>
 on <a href="http://gotocon.com/berlin-2013/presentation/Maneuverable%20Web%20Architecture">Maneuverable Web Architecture</a>. A few of us got together and watched it and
-it got us thinking&#8230;</p>
+it got us thinking…</p>
 
 <p>Businesses need to be able to move quickly, and some of the established architectural
 patterns stop them doing this. The presentation contained lots of ideas but I am going
@@ -34,12 +34,12 @@ and then sends them on.</p>
 
 <p>This approach works well, loads of people have done it, and it is pretty easy to
 implement. There are some problems though: changing things can be difficult; you have
-to make sure that you don&#8217;t break any of the queued emails whenever you make a change.
-The solution isn&#8217;t very flexible either, it is good for sending emails but if you want
+to make sure that you don’t break any of the queued emails whenever you make a change.
+The solution isn’t very flexible either, it is good for sending emails but if you want
 to do something else you will have to revisit your entire solution.</p>
 
 <p>Is there a better way? Michael proposed this approach. When I first saw it I thought
-it was a bit crazy, but I had a go at implementing it and it has a lot going for it&#8230;</p>
+it was a bit crazy, but I had a go at implementing it and it has a lot going for it…</p>
 
 <p>We first create a few components:</p>
 
@@ -52,9 +52,9 @@ it was a bit crazy, but I had a go at implementing it and it has a lot going for
 <p>How does this let us send an email to a customer?</p>
 
 <ul>
-  <li>the client sending the email says to the script factory: &#8220;Give me an email sending script&#8221;</li>
+  <li>the client sending the email says to the script factory: “Give me an email sending script”</li>
   <li>the script factory builds the script and passes a url to execute the script to the client</li>
-  <li>the client says to the at service: &#8220;Call this url now&#8221;</li>
+  <li>the client says to the at service: “Call this url now”</li>
   <li>the at service calls the url, and the script engine executes the script</li>
   <li>the script does everything required to send an email to the customer</li>
 </ul>
@@ -68,14 +68,14 @@ on a different url. All the exisitng scripts will still work, any new scripts wi
 versions. If you want to add email tracking, change the script factory to include
 it and then all new scripts will have email tracking. All the old scripts will still work.</li>
   <li>All clients are doing is asking for a script and scheduling them. You
-can write scripts to do anything you can think of&#8230;</li>
+can write scripts to do anything you can think of…</li>
 </ul>
 
-<p>I am glossing over some of the problems&#8230; The script engine is non-trivial, error
+<p>I am glossing over some of the problems… The script engine is non-trivial, error
 handling seems complicated and it takes some explaining to developers.</p>
 
 <p>If your interested I had a go at implementing the approach, you can see the results on <a href="http://github.com/typingincolor/typhoon">github</a>.
-It is by no means production ready, but you can kind of see how it could work&#8230;</p>
+It is by no means production ready, but you can kind of see how it could work…</p>
 
 ]]></content>
   </entry>
@@ -86,20 +86,20 @@ It is by no means production ready, but you can kind of see how it could work&#8
     <updated>2014-03-17T09:01:00+00:00</updated>
     <id>http://www.landofshattereddreams.com/blog/2014/03/17/adventures-in-oauth2</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://www.landofshattereddreams.com/images/logos/oauth-2-sm.png" />
-I&#8217;ve not been able to blog for a while as a lot of things have been going on.
+I’ve not been able to blog for a while as a lot of things have been going on.
 In November I left <a href="http://www.morrisons.co.uk">Morrisons</a> to take a Solutions Architect role at <a href="http://www.laterooms.com">Laterooms</a>
-and it has taken me a while to get settled in and to work out what&#8217;s going on.</p>
+and it has taken me a while to get settled in and to work out what’s going on.</p>
 
 <p>One of the things I am looking at for Laterooms is how we use APIs to power our
-platform. We&#8217;ve developed <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">RESTful APIs</a> that are used by our mobile applications
-but we can do a whole lot more with our APIs. Long term, I&#8217;d like to build our entire
+platform. We’ve developed <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">RESTful APIs</a> that are used by our mobile applications
+but we can do a whole lot more with our APIs. Long term, I’d like to build our entire
 platform on APIs using them as the base for our mobile apps, the websites and our
-integration with affiliates and hotel providers. We&#8217;ve got a long way to go, but
+integration with affiliates and hotel providers. We’ve got a long way to go, but
 I guess a journey of a thousand miles begins with a single step.</p>
 
 <p>One of the key considerations we have when designing our API platform is controlling
 who has access to our data. We want to build a platform capable of allowing <em>authorized</em>
-consumers unlimited access to Lateroom&#8217;s data. Note <em>authorized</em> consumers, some data
+consumers unlimited access to Lateroom’s data. Note <em>authorized</em> consumers, some data
 is public and we want to make it as easy as possible to access it; some data is
 most definitely not public and access to it has to be limited.</p>
 
@@ -124,8 +124,8 @@ I also wrote a simple client web app that consumed the API again hosted on Herok
 Finally I wired in each of the API management platforms to protect the API and
 to ensure only authenticated users could use the client.</p>
 
-<p>I used the &#8220;Authorization Code&#8221; flow to authenticate and authorise the client users,
-which means that the client does not need any knowledge of the user&#8217;s credentials
+<p>I used the “Authorization Code” flow to authenticate and authorise the client users,
+which means that the client does not need any knowledge of the user’s credentials
 and all the authentication and authorization is done on the API side.</p>
 
 <p>At a high level, every API request by the client requires an access token to call a
@@ -147,8 +147,8 @@ a screen to enter their username and password and which validated them. The user
 clicks on a link in the client app and is taken to this validation screen.</p>
 
 <p>If the validation succeeds the web app uses a Mashery API to generate an authorization
-code and this is passed back to the client via it&#8217;s callback url. The client makes a call
-to a &#8220;token&#8221; endpoint configured in the Mashery API and which responds with an access token.
+code and this is passed back to the client via it’s callback url. The client makes a call
+to a “token” endpoint configured in the Mashery API and which responds with an access token.
 This token is passed with every subsequent API call and the Mashery platform ensures that
 it is valid.</p>
 
@@ -156,7 +156,7 @@ it is valid.</p>
 change the code a developed using Apigee to work with Mashery.</p>
 
 <h3 id="apigee">Apigee</h3>
-<p>Apigee&#8217;s approach is slightly different to Mashery. I had to expose three
+<p>Apigee’s approach is slightly different to Mashery. I had to expose three
 endpoints in Apigee. The first endpoint redirects to the login application where
 the user enters their details. If the details are correct, the login app calls
 the second endpoint which generates an authorization code and passes it to the
@@ -179,8 +179,8 @@ required the most technical knowledge to get working.</p>
 
 <h3 id="conclusion">Conclusion</h3>
 <p>All three platforms made it simple to implement the required functionality.
-Mashery and Apigee&#8217;s approach are pretty similar (although the platforms are
-quite different), and Mulesoft&#8217;s approach also work&#8217;s well.</p>
+Mashery and Apigee’s approach are pretty similar (although the platforms are
+quite different), and Mulesoft’s approach also work’s well.</p>
 
 ]]></content>
   </entry>

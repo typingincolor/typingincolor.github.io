@@ -33,6 +33,8 @@ on Maneuverable Web Architecture. A few of us got together and &hellip;">
 <script type="text/javascript" src="/javascripts/losd.js"></script>
 <script type="text/javascript" src="http://use.typekit.net/rky2ggt.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<meta name="msvalidate.01" content="39BD619A631FE62EB29D95EDB4367E7D" />
+
   
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -79,7 +81,6 @@ on Maneuverable Web Architecture. A few of us got together and &hellip;">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/about">About me</a>
-  <li><a href="/contact-me">Contact me</a>
 </ul>
 
 </nav>
@@ -106,7 +107,8 @@ on Maneuverable Web Architecture. A few of us got together and &hellip;">
   
 
 
-<time datetime="2014-04-11T11:19:00+01:00" pubdate data-updated="true">Apr 11<span>th</span>, 2014</time>
+
+<time datetime="2014-04-11T11:19:00+01:00"  class="updated">Apr 11<span>th</span>, 2014</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -118,7 +120,7 @@ on Maneuverable Web Architecture. A few of us got together and &hellip;">
 <div class="entry-content"><p><img class="left" src="/images/typhoon.jpeg" />
 One of my colleagues attend QCon London and saw a presentation by <a href="http://www.michaelnygard.com/">Michael Nygard</a>
 on <a href="http://gotocon.com/berlin-2013/presentation/Maneuverable%20Web%20Architecture">Maneuverable Web Architecture</a>. A few of us got together and watched it and
-it got us thinking&#8230;</p>
+it got us thinking…</p>
 
 <p>Businesses need to be able to move quickly, and some of the established architectural
 patterns stop them doing this. The presentation contained lots of ideas but I am going
@@ -131,12 +133,12 @@ and then sends them on.</p>
 
 <p>This approach works well, loads of people have done it, and it is pretty easy to
 implement. There are some problems though: changing things can be difficult; you have
-to make sure that you don&#8217;t break any of the queued emails whenever you make a change.
-The solution isn&#8217;t very flexible either, it is good for sending emails but if you want
+to make sure that you don’t break any of the queued emails whenever you make a change.
+The solution isn’t very flexible either, it is good for sending emails but if you want
 to do something else you will have to revisit your entire solution.</p>
 
 <p>Is there a better way? Michael proposed this approach. When I first saw it I thought
-it was a bit crazy, but I had a go at implementing it and it has a lot going for it&#8230;</p>
+it was a bit crazy, but I had a go at implementing it and it has a lot going for it…</p>
 
 <p>We first create a few components:</p>
 
@@ -149,9 +151,9 @@ it was a bit crazy, but I had a go at implementing it and it has a lot going for
 <p>How does this let us send an email to a customer?</p>
 
 <ul>
-  <li>the client sending the email says to the script factory: &#8220;Give me an email sending script&#8221;</li>
+  <li>the client sending the email says to the script factory: “Give me an email sending script”</li>
   <li>the script factory builds the script and passes a url to execute the script to the client</li>
-  <li>the client says to the at service: &#8220;Call this url now&#8221;</li>
+  <li>the client says to the at service: “Call this url now”</li>
   <li>the at service calls the url, and the script engine executes the script</li>
   <li>the script does everything required to send an email to the customer</li>
 </ul>
@@ -165,14 +167,14 @@ on a different url. All the exisitng scripts will still work, any new scripts wi
 versions. If you want to add email tracking, change the script factory to include
 it and then all new scripts will have email tracking. All the old scripts will still work.</li>
   <li>All clients are doing is asking for a script and scheduling them. You
-can write scripts to do anything you can think of&#8230;</li>
+can write scripts to do anything you can think of…</li>
 </ul>
 
-<p>I am glossing over some of the problems&#8230; The script engine is non-trivial, error
+<p>I am glossing over some of the problems… The script engine is non-trivial, error
 handling seems complicated and it takes some explaining to developers.</p>
 
 <p>If your interested I had a go at implementing the approach, you can see the results on <a href="http://github.com/typingincolor/typhoon">github</a>.
-It is by no means production ready, but you can kind of see how it could work&#8230;</p>
+It is by no means production ready, but you can kind of see how it could work…</p>
 
 </div>
 
@@ -196,7 +198,8 @@ It is by no means production ready, but you can kind of see how it could work&#8
   
 
 
-<time datetime="2014-04-11T11:19:00+01:00" pubdate data-updated="true">Apr 11<span>th</span>, 2014</time>
+
+<time datetime="2014-04-11T11:19:00+01:00"  class="updated">Apr 11<span>th</span>, 2014</time>
       
 
 <span class="categories">
@@ -237,6 +240,10 @@ It is by no means production ready, but you can kind of see how it could work&#8
 <aside class="sidebar">
   
     <section>
+  <img class="center" src="/images/me/me.jpg" width="200" height="186" title="'me'">
+  <p class="about-me-tagline">Dad, hockey player, solutions architect and code monkey</p>
+</section>
+<section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
@@ -267,7 +274,7 @@ It is by no means production ready, but you can kind of see how it could work&#8
 
 <section class="googleplus googleplus-hidden">
   <h1>
-    <a href="https://plus.google.com/AndrewBraithwaite?rel=author">
+    <a href="https://plus.google.com/101618016804508090948?rel=author">
       <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
       Google+
     </a>
